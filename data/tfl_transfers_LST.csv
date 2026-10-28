@@ -1,0 +1,197 @@
+crs,name,tfl_min,modes,summary
+ABW,Abbey Wood (London),18,elizabeth-line,Elizabeth line to Liverpool Street Station
+ABX,Abbey Wood,18,elizabeth-line,Elizabeth line to Liverpool Street Station
+ACC,Acton Central,45,overground+tube+walking+elizabeth-line,"Mildmay line to Willesden Junction Rail Station, Bakerloo line to Paddington, walk, Elizabeth line to Liverpool Street Station"
+AML,Acton Main Line,19,elizabeth-line,Elizabeth line to Liverpool Street Station
+ANZ,Anerley,34,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+BAL,Balham,34,walking+tube+walking,"walk, Northern line to Moorgate, walk"
+BKG,Barking,22,tube+tube,"District line to Mile End, Central line to Liverpool Street"
+BGV,Barking Riverside,34,overground+tube+tube,"Suffragette line to Barking Rail Station, Hammersmith & City line to Mile End, Central line to Liverpool Street"
+BAK,Battersea Park,33,walking+tube+elizabeth-line,"walk, Northern line to Tottenham Court Road, Elizabeth line to Liverpool Street Station"
+BHK,Bush Hill Park,33,overground,Weaver line to Liverpool Street Rail Station
+BHO,Blackhorse Road,28,tube+tube,"Victoria line to King's Cross St.Pancras, Circle line to Liverpool Street"
+BFR,London Blackfriars,14,tube,Circle line to Liverpool Street
+BDS,Bond Street,7,elizabeth-line,Elizabeth line to Liverpool Street Station
+BOP,Bowes Park,38,walking+tube+tube+tube,"walk, Piccadilly line to Finsbury Park, Victoria line to King's Cross St.Pancras, Circle line to Liverpool Street"
+BSY,Brondesbury,32,walking+tube+elizabeth-line,"walk, Jubilee line to Bond Street, Elizabeth line to Liverpool Street Station"
+BSP,Brondesbury Park,35,overground+walking+tube+elizabeth-line,"Mildmay line to West Hampstead Rail Station, walk, Jubilee line to Bond Street, Elizabeth line to Liverpool Street Station"
+BMD,Brimsdown,66,walking+overground,"walk, Weaver line to Liverpool Street Rail Station"
+BRX,Brixton,32,walking+tube+tube+walking,"walk, Victoria line to Stockwell, Northern line to Moorgate, walk"
+BCY,Brockley,22,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+BCV,Bruce Grove,22,overground,Weaver line to Liverpool Street Rail Station
+BET,Bethnal Green,5,overground,Weaver line to Liverpool Street Rail Station
+CBH,Cambridge Heath (London),7,overground,Weaver line to Liverpool Street Rail Station
+CST,London Cannon Street,11,walking+tube,"walk, Central line to Liverpool Street"
+CWX,Canary Wharf,7,elizabeth-line,Elizabeth line to Liverpool Street Station
+CTH,Chadwell Heath,26,elizabeth-line,Elizabeth line to Liverpool Street Station
+CHI,Chingford,28,overground,Weaver line to Liverpool Street Rail Station
+CHK,Chiswick,35,tube+elizabeth-line,"District line to Ealing Broadway, Elizabeth line to Liverpool Street Station"
+CHX,London Charing Cross,10,tube+elizabeth-line,"Northern line to Tottenham Court Road, Elizabeth line to Liverpool Street Station"
+CPT,Clapton,13,overground,Weaver line to Liverpool Street Rail Station
+CIR,Caledonian Road & Barnsbury,27,overground+walking+overground,"Mildmay line to Hackney Central Rail Station, walk, Weaver line to Liverpool Street Rail Station"
+CLP,Clapham High Street,29,walking+tube+walking,"walk, Northern line to Moorgate, walk"
+CLJ,Clapham Junction,39,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+CMD,Camden Road,30,overground+walking+overground,"Mildmay line to Hackney Central Rail Station, walk, Weaver line to Liverpool Street Rail Station"
+ZCW,Canada Water,13,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+CNN,Canonbury,16,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+CRH,Crouch Hill,37,overground+walking+tube+elizabeth-line,"Suffragette line to Upper Holloway Rail Station, walk, Northern line to Tottenham Court Road, Elizabeth line to Liverpool Street Station"
+CYP,Crystal Palace,35,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+IMW,Imperial Wharf,38,overground+walking+tube,"Mildmay line to Shepherd's Bush Rail Station, walk, Central line to Liverpool Street"
+CTK,City Thameslink,15,walking+tube,"walk, Central line to Liverpool Street"
+CUS,Custom House,11,elizabeth-line,Elizabeth line to Liverpool Street Station
+DLJ,Dalston Junction,13,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+DLK,Dalston Kingsland,18,walking+overground+elizabeth-line,"walk, Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+DMK,Denmark Hill,26,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+DEP,Deptford,39,walking+dlr+walking+elizabeth-line,"walk, DLR to Heron Quays DLR Station, walk, Elizabeth line to Liverpool Street Station"
+DYP,Drayton Park,36,walking+tube+tube+walking,"walk, Piccadilly line to King's Cross St.Pancras, Northern line to Moorgate, walk"
+EAL,Ealing Broadway,21,elizabeth-line,Elizabeth line to Liverpool Street Station
+EDR,Edmonton Green,28,overground,Weaver line to Liverpool Street Rail Station
+EPH,Elephant & Castle,22,walking+tube+walking,"walk, Northern line to Moorgate, walk"
+EMP,Emerson Park,45,overground+elizabeth-line,"Liberty line to Romford Rail Station, Elizabeth line to Liverpool Street Station"
+ENC,Enfield Chase,53,walking+overground,"walk, Weaver line to Liverpool Street Rail Station"
+ENL,Enfield Lock,55,walking+overground,"walk, Weaver line to Liverpool Street Rail Station"
+ENF,Enfield Town,36,overground,Weaver line to Liverpool Street Rail Station
+EUS,London Euston,13,tube+walking,"Northern line to Moorgate, walk"
+FST,London Fenchurch Street,10,walking,walk
+FNY,Finchley Road & Frognal,33,walking+tube,"walk, Metropolitan line to Liverpool Street"
+FPK,Finsbury Park,25,walking+tube+tube,"walk, Victoria line to King's Cross St.Pancras, Circle line to Liverpool Street"
+FOH,Forest Hill,27,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+ZFD,Farringdon,2,elizabeth-line,Elizabeth line to Liverpool Street Station
+FDX,Farringdon,2,elizabeth-line,Elizabeth line to Liverpool Street Station
+FOG,Forest Gate,13,elizabeth-line,Elizabeth line to Liverpool Street Station
+GFD,Greenford,38,tube,Central line to Liverpool Street
+GDP,Gidea Park,32,elizabeth-line,Elizabeth line to Liverpool Street Station
+GUN,Gunnersbury,44,tube+tube+elizabeth-line,"District line to Turnham Green, District line to Ealing Broadway, Elizabeth line to Liverpool Street Station"
+GNW,Greenwich,29,dlr+walking+elizabeth-line,"DLR to Heron Quays DLR Station, walk, Elizabeth line to Liverpool Street Station"
+GMY,Goodmayes,24,elizabeth-line,Elizabeth line to Liverpool Street Station
+GPO,Gospel Oak,35,overground+walking+overground,"Mildmay line to Hackney Central Rail Station, walk, Weaver line to Liverpool Street Rail Station"
+GPK,Grange Park,26,overground+walking+elizabeth-line,"Suffragette line to Wanstead Park Rail Station, walk, Elizabeth line to Liverpool Street Station"
+HKC,Hackney Central,14,walking+overground,"walk, Weaver line to Liverpool Street Rail Station"
+HKW,Hackney Wick,20,overground+elizabeth-line,"Mildmay line to Stratford Rail Station, Elizabeth line to Liverpool Street Station"
+HGG,Haggerston,12,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+HAC,Hackney Downs,9,overground,Weaver line to Liverpool Street Rail Station
+HAN,Hanwell,26,elizabeth-line,Elizabeth line to Liverpool Street Station
+HDN,Harlesden,37,tube+walking+elizabeth-line,"Bakerloo line to Paddington, walk, Elizabeth line to Liverpool Street Station"
+HOH,Harrow-on-the-Hill,33,tube,Metropolitan line to Liverpool Street
+HAY,Hayes & Harlington,29,elizabeth-line,Elizabeth line to Liverpool Street Station
+HEN,Hendon,31,tube+elizabeth-line,"Northern line to Tottenham Court Road, Elizabeth line to Liverpool Street Station"
+HDL,Headstone Lane,53,overground+walking+tube,"Lioness line to Kenton Rail Station, walk, Metropolitan line to Liverpool Street"
+HHY,Highbury & Islington,18,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+HIP,Highams Park,24,overground,Weaver line to Liverpool Street Rail Station
+HII,Highbury & Islington,18,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+HDH,Hampstead Heath,36,overground+walking+tube+elizabeth-line,"Mildmay line to West Hampstead Rail Station, walk, Jubilee line to Bond Street, Elizabeth line to Liverpool Street Station"
+HMN,Homerton,22,overground+elizabeth-line,"Mildmay line to Stratford Rail Station, Elizabeth line to Liverpool Street Station"
+HPA,Honor Oak Park,25,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+HOU,Hounslow,79,walking+tube+tube+elizabeth-line,"walk, Piccadilly line to Acton Town, District line to Ealing Broadway, Elizabeth line to Liverpool Street Station"
+HOX,Hoxton,10,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+HGY,Harringay,51,walking+overground+walking+overground,"walk, Suffragette line to South Tottenham Rail Station, walk, Weaver line to Liverpool Street Rail Station"
+HRY,Harringay Green Lanes,39,overground+walking+overground,"Suffragette line to South Tottenham Rail Station, walk, Weaver line to Liverpool Street Rail Station"
+HRO,Harold Wood,35,elizabeth-line,Elizabeth line to Liverpool Street Station
+HRW,Harrow & Wealdstone,50,tube+walking+elizabeth-line,"Bakerloo line to Paddington, walk, Elizabeth line to Liverpool Street Station"
+HTE,Hatch End,55,overground+walking+tube,"Lioness line to Kenton Rail Station, walk, Metropolitan line to Liverpool Street"
+LHR,Heathrow Terminals 2 & 3,38,elizabeth-line,Elizabeth line to Liverpool Street Station
+HAF,Heathrow Terminal 4,44,elizabeth-line,Elizabeth line to Liverpool Street Station
+HWV,Heathrow Terminal 5,47,elizabeth-line,Elizabeth line to Liverpool Street Station
+NRC,Newbury Park,26,tube,Central line to Liverpool Street
+IFD,Ilford,18,elizabeth-line,Elizabeth line to Liverpool Street Station
+KPA,Kensington (Olympia),32,overground+walking+tube,"Mildmay line to Shepherd's Bush Rail Station, walk, Central line to Liverpool Street"
+KNR,Kensal Rise,37,overground+walking+tube+elizabeth-line,"Mildmay line to West Hampstead Rail Station, walk, Jubilee line to Bond Street, Elizabeth line to Liverpool Street Station"
+KNL,Kensal Green,32,tube+walking+elizabeth-line,"Bakerloo line to Paddington, walk, Elizabeth line to Liverpool Street Station"
+KWG,Kew Gardens,47,tube+tube+elizabeth-line,"District line to Turnham Green, District line to Ealing Broadway, Elizabeth line to Liverpool Street Station"
+KBN,Kilburn High Road,31,overground+tube+walking,"Lioness line to Euston Rail Station, Northern line to Moorgate, walk"
+KGX,London Kings Cross,9,tube,Hammersmith & City line to Liverpool Street
+KTN,Kentish Town,20,tube+walking,"Northern line to Moorgate, walk"
+KTW,Kentish Town West,33,overground+walking+overground,"Mildmay line to Hackney Central Rail Station, walk, Weaver line to Liverpool Street Rail Station"
+KNT,Kenton,42,walking+tube,"walk, Metropolitan line to Liverpool Street"
+LEE,Lee,6,tube,Central line to Liverpool Street
+LEW,Lewisham,39,walking+dlr+walking+elizabeth-line,"walk, DLR to Heron Quays DLR Station, walk, Elizabeth line to Liverpool Street Station"
+LEM,Leyton Midland Road,29,overground+walking+elizabeth-line,"Suffragette line to Wanstead Park Rail Station, walk, Elizabeth line to Liverpool Street Station"
+LHS,Limehouse,13,dlr+tube,"DLR to Bank DLR Station, Central line to Liverpool Street"
+LBG,London Bridge,9,tube+walking,"Northern line to Moorgate, walk"
+LOF,London Fields,9,overground,Weaver line to Liverpool Street Rail Station
+LER,Leytonstone High Road,26,walking+tube,"walk, Central line to Liverpool Street"
+MNP,Manor Park,16,elizabeth-line,Elizabeth line to Liverpool Street Station
+MYB,London Marylebone,20,tube+tube,"Bakerloo line to Baker Street, Metropolitan line to Liverpool Street"
+MDS,Morden South,47,walking+tube+walking,"walk, Northern line to Moorgate, walk"
+MOG,Moorgate,2,tube,Hammersmith & City line to Liverpool Street
+MYL,Maryland,11,elizabeth-line,Elizabeth line to Liverpool Street Station
+NXG,New Cross Gate ELL,19,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+NUM,Northumberland Park,41,walking+overground,"walk, Weaver line to Liverpool Street Rail Station"
+NWD,Norwood Junction,37,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+NWX,New Cross ELL,19,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+NWB,North Wembley,44,tube+walking+elizabeth-line,"Bakerloo line to Paddington, walk, Elizabeth line to Liverpool Street Station"
+OLD,Old Street,6,tube+walking,"Northern line to Moorgate, walk"
+PDX,Paddington,10,elizabeth-line,Elizabeth line to Liverpool Street Station
+PAD,London Paddington,10,elizabeth-line,Elizabeth line to Liverpool Street Station
+QRP,Queens Road Peckham,22,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+PMR,Peckham Rye,24,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+PNW,Penge West,33,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+PON,Ponders End,55,walking+overground,"walk, Weaver line to Liverpool Street Rail Station"
+PNE,Penge East,45,walking+overground+elizabeth-line,"walk, Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+PUT,Putney,54,walking+tube+tube+elizabeth-line,"walk, District line to Embankment, Northern line to Tottenham Court Road, Elizabeth line to Liverpool Street Station"
+QPW,Queens Park (London),25,tube+walking+elizabeth-line,"Bakerloo line to Paddington, walk, Elizabeth line to Liverpool Street Station"
+QRB,Queenstown Road (Battersea),34,walking+tube+elizabeth-line,"walk, Northern line to Tottenham Court Road, Elizabeth line to Liverpool Street Station"
+REC,Rectory Road,14,overground,Weaver line to Liverpool Street Rail Station
+RMD,Richmond (London),50,tube+tube+elizabeth-line,"District line to Turnham Green, District line to Ealing Broadway, Elizabeth line to Liverpool Street Station"
+RMF,Romford,29,elizabeth-line,Elizabeth line to Liverpool Street Station
+ROE,Rotherhithe,11,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+SAT,South Acton,56,overground+tube+tube,"Mildmay line to Gunnersbury Rail Station, District line to Mansion House, Circle line to Liverpool Street"
+SBU,Southbury,32,overground,Weaver line to Liverpool Street Rail Station
+SDH,Sudbury Hill Harrow,56,walking+tube+tube+elizabeth-line,"walk, Piccadilly line to Ealing Common, District line to Ealing Broadway, Elizabeth line to Liverpool Street Station"
+SUD,Sudbury & Harrow Road,55,walking+tube+tube+elizabeth-line,"walk, Piccadilly line to Ealing Common, District line to Ealing Broadway, Elizabeth line to Liverpool Street Station"
+SVS,Seven Sisters,23,overground,Weaver line to Liverpool Street Rail Station
+SDE,Shadwell,8,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+SOH,South Hampstead,29,overground+tube+walking,"Lioness line to Euston Rail Station, Northern line to Moorgate, walk"
+SPB,Shepherds Bush,27,walking+tube,"walk, Central line to Liverpool Street"
+SDC,Shoreditch High Street,4,walking,walk
+SLV,Silver Street,26,overground,Weaver line to Liverpool Street Rail Station
+SOK,South Kenton,46,tube+walking+elizabeth-line,"Bakerloo line to Paddington, walk, Elizabeth line to Liverpool Street Station"
+SMO,South Merton,47,walking+tube+walking,"walk, Northern line to Moorgate, walk"
+SRU,South Ruislip,43,tube,Central line to Liverpool Street
+SRA,Stratford (London),8,elizabeth-line,Elizabeth line to Liverpool Street Station
+SFA,Stratford International,19,walking+dlr+tube,"walk, DLR to Stratford DLR Station, Central line to Liverpool Street"
+STL,Southall,25,elizabeth-line,Elizabeth line to Liverpool Street Station
+SJS,St James Street (London),17,overground,Weaver line to Liverpool Street Rail Station
+SAJ,St Johns (London),43,walking+dlr+walking+elizabeth-line,"walk, DLR to Heron Quays DLR Station, walk, Elizabeth line to Liverpool Street Station"
+SKW,Stoke Newington,16,overground,Weaver line to Liverpool Street Rail Station
+SMH,Stamford Hill,18,overground,Weaver line to Liverpool Street Rail Station
+SBP,Stonebridge Park,39,tube+walking+elizabeth-line,"Bakerloo line to Paddington, walk, Elizabeth line to Liverpool Street Station"
+STO,South Tottenham,33,walking+overground,"walk, Weaver line to Liverpool Street Rail Station"
+STP,London St Pancras International,13,walking+tube,"walk, Hammersmith & City line to Liverpool Street"
+SPL,London St Pancras International LL,13,walking+tube,"walk, Hammersmith & City line to Liverpool Street"
+SQE,Surrey Quays,15,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+SVK,Seven Kings,22,elizabeth-line,Elizabeth line to Liverpool Street Station
+SYD,Sydenham,30,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+TOO,Tooting,30,tube+walking,"Northern line to Moorgate, walk"
+TCR,Tottenham Court Road,5,elizabeth-line,Elizabeth line to Liverpool Street Station
+TOM,Tottenham Hale,26,tube+tube,"Victoria line to King's Cross St.Pancras, Circle line to Liverpool Street"
+TUR,Turkey Street,35,overground,Weaver line to Liverpool Street Rail Station
+UPM,Upminster,39,tube+tube,"District line to Mile End, Central line to Liverpool Street"
+UHL,Upper Holloway,33,walking+tube+walking,"walk, Northern line to Moorgate, walk"
+VXH,Vauxhall,31,walking+tube+tube,"walk, Victoria line to Oxford Circus, Central line to Liverpool Street"
+VIC,London Victoria,20,tube+tube,"Victoria line to Oxford Circus, Central line to Liverpool Street"
+WPE,Wapping,10,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+WAT,London Waterloo,12,tube+tube,"Waterloo & City line to Bank, Central line to Liverpool Street"
+WBP,West Brompton,33,tube+tube+elizabeth-line,"District line to Embankment, Northern line to Tottenham Court Road, Elizabeth line to Liverpool Street Station"
+ZWL,Whitechapel,3,elizabeth-line,Elizabeth line to Liverpool Street Station
+WHX,Whitechapel,3,elizabeth-line,Elizabeth line to Liverpool Street Station
+WCY,West Croydon,43,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+WGR,Woodgrange Park,26,overground+walking+elizabeth-line,"Suffragette line to Wanstead Park Rail Station, walk, Elizabeth line to Liverpool Street Station"
+WIM,Wimbledon,49,tube+tube+elizabeth-line,"District line to Embankment, Northern line to Tottenham Court Road, Elizabeth line to Liverpool Street Station"
+WDT,West Drayton,33,elizabeth-line,Elizabeth line to Liverpool Street Station
+WST,Wood Street,21,overground,Weaver line to Liverpool Street Rail Station
+WEA,West Ealing,24,elizabeth-line,Elizabeth line to Liverpool Street Station
+WEH,West Ham,13,tube+tube,"District line to Mile End, Central line to Liverpool Street"
+WHL,White Hart Lane,24,overground,Weaver line to Liverpool Street Rail Station
+WHD,West Hampstead,28,walking+tube+elizabeth-line,"walk, Jubilee line to Bond Street, Elizabeth line to Liverpool Street Station"
+WHP,West Hampstead Thameslink,28,walking+tube+elizabeth-line,"walk, Jubilee line to Bond Street, Elizabeth line to Liverpool Street Station"
+WAE,London Waterloo East,22,walking+tube+tube+walking,"walk, Jubilee line to London Bridge, Northern line to Moorgate, walk"
+WIJ,Willesden Junction,35,tube+walking+elizabeth-line,"Bakerloo line to Paddington, walk, Elizabeth line to Liverpool Street Station"
+WMW,Walthamstow Queens Road,29,walking+overground,"walk, Weaver line to Liverpool Street Rail Station"
+WHC,Walthamstow Central,19,overground,Weaver line to Liverpool Street Rail Station
+WMB,Wembley Central,42,tube+walking+elizabeth-line,"Bakerloo line to Paddington, walk, Elizabeth line to Liverpool Street Station"
+WWR,Wandsworth Road,33,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+WNP,Wanstead Park,18,walking+elizabeth-line,"walk, Elizabeth line to Liverpool Street Station"
+WWA,Woolwich Arsenal,22,walking+elizabeth-line,"walk, Elizabeth line to Liverpool Street Station"
+WWC,Woolwich,15,elizabeth-line,Elizabeth line to Liverpool Street Station
+WRU,West Ruislip,47,tube,Central line to Liverpool Street

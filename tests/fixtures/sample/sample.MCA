@@ -1,0 +1,75 @@
+HDTPS.UCFCATE.PD2506111106251234DFTTISXDFTTISXFA250611250611                    
+AANK00010L000112501012512311111100JJSCHLMSFD  TP                               P
+AANK00010L000112501012512311111100VVSCOLCHST  TP                               P
+AANK00010L000112506112506111111111VVSCOLCHST  TP                               C
+AANK00010Z999992501012512311111100JJSCHLMSFD  TP                               P
+BSNA000012501012512311111100 POO1A01     24207004 EMU319 100D                  P
+BX         GE1                                                                  
+LOCOLCHST 0715 0715          TB                                                 
+LICHLMSFD 0745 0746      07450746         T                                     
+LIINGTSTN           0800 00000000                                               
+LISHENFLD 0820 0821      08200821         T                                     
+LTLIVST   0838 0838      TF                                                     
+BSNB000022501012512311111100 POO1B02     24207004 EMU319 100D                  P
+BX         GE1                                                                  
+LOCAMBDGE 0900 0900          TB                                                 
+LTLIVST   1000 1000      TF                                                     
+BSNB000032501012512311111100 POO1B03     24207004 EMU319 100D                  P
+BX         GE1                                                                  
+LOCAMBDGE 0930 0930          TB                                                 
+LTLIVST   1030 1030      TF                                                     
+BSND000042501012512310000011 POO1D04     24207004 EMU319 100D                  P
+BX         GE1                                                                  
+LOCAMBDGE 1100 1100          TB                                                 
+LTLIVST   1200 1200      TF                                                     
+BSNE000162501012512311111100 PEE5E16     24207004 EMU319 100D                  P
+BX         GE1                                                                  
+LONRCH    0500 0500          TB                                                 
+LTLIVST   0700 0700      TF                                                     
+BSNF000052501012512311111100 POO1F05     24207004 EMU319 100D                  P
+BX         GE1                                                                  
+LOIPSWICH 0700 0700          TB                                                 
+LICOLCHST 0730 0731      07300731         D                                     
+LICHLMSFD 0745 0746      07450746         U                                     
+LTLIVST   0820 0820      TF                                                     
+BSNG000072501012512311111100 BBR0G07     24207004 EMU319 100D                  P
+BX         RA1                                                                  
+LOCAMBDGE 0600 0600          TB                                                 
+LTLIVST   0700 0700      TF                                                     
+BSNH000082501012512311111100 POO1H08     24207004 EMU319 100D                  P
+BX         GE1                                                                  
+LONRCH    0630 0630          TB                                                 
+LTLIVST   0830 0830      TF                                                     
+BSNK000102501012512311111100 POO1K10     24207004 EMU319 100D                  P
+BX         GE1                                                                  
+LOCOLCHST 0830 0830          TB                                                 
+LICHLMSFD 0850 0851      08500851         T                                     
+LTLIVST   0915 0915      TF                                                     
+BSNL000112501012512311111100 POO1L11     24207004 EMU319 100D                  P
+BX         GE1                                                                  
+LOIPSWICH 0800 0800          TB                                                 
+LTCHLMSFD 0847 0847      TF                                                     
+BSNS000092501012512311111100 PXZ1S09     24207004 EMU319 100D                  P
+BX         CS1                                                                  
+LONRCH    2300 2300          TB                                                 
+LIIPSWICH 2340 2342      23402342         T                                     
+LICHLMSFD 0020 0022      00200022         T                                     
+LTLIVST   0100 0100      TF                                                     
+BSNA000012506112506111111111 POO1A01     24207004 EMU319 100D                  O
+BX         GE1                                                                  
+LOCOLCHST 0720 0720          TB                                                 
+LICHLMSFD 0750 0751      07500751         T                                     
+LIINGTSTN           0805 00000000                                               
+LISHENFLD 0825 0826      08250826         T                                     
+LTLIVST   0843 0843      TF                                                     
+BSNB000022506112506111111111                                                   C
+BSNH000082506112506111111111 5BR0H08     24207004 EMU319 100D                  O
+BX         RA1                                                                  
+LONRCH    0630 0630          TB                                                 
+LTLIVST   0830 0830      TF                                                     
+BSNN000152506112506111111111 PXX1N15     24207004 EMU319 100D                  N
+BX         XR1                                                                  
+LONRCH    0700 0700          TB                                                 
+LIIPSWICH 0745 0746      07450746         T                                     
+LTLIVST   0900 0900      TF                                                     
+ZZ                                                                              

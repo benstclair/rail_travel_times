@@ -1,0 +1,14 @@
+/!! Start of file
+A                             FILE-SPEC=05 1.00 09/01/25 18.10.32 788
+A    COLCHESTER                    0COLCHSTCOL   COL15473 61790 5                 
+A    CHELMSFORD                    0CHLMSFDCHM   CHM15473 61790 4                 
+A    SHENFIELD                     0SHENFLDSNF   SNF15473 61790 3                 
+A    INGATESTONE                   0INGTSTNINT   INT15473 61790 2                 
+A    LONDON LIVERPOOL STREET       0LIVST  LST   LST15473 6179015                 
+A    IPSWICH                       0IPSWICHIPS   IPS15473 61790 5                 
+A    NORWICH                       0NRCH   NRW   NRW15473 61790 5                 
+A    CAMBRIDGE                     0CAMBDGECBG   CBG15473 61790 7                 
+L    COLCHESTER                    COLCHESTER TOWN
+Z    ZZZZZZZZZZ               END OF MSNF
+End of File
+/!! End of file
