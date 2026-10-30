@@ -44,7 +44,9 @@ The feed names its files `RJTTF<seq><TYPE>.txt` (e.g. `RJTTF995MCA.txt`); `cif.p
 Steps 1-2 of the pipeline don't need re-running. If they are: `tfl_transfers.py` queries a fixed date
 (Tue 10 Nov 2026) and TfL only plans future dates, so update `PARAMS`/`DEADLINE` first. Cached responses are reused
 (`data/raw/tfl_transfer_modes/` for LST, `data/raw/tfl_transfer_modes_<CRS>/` for other destinations,
-`data/raw/tfl_hub_transfers/` for hub pairs); delete a folder to force fresh queries.
+`data/raw/tfl_hub_transfers/` for hub pairs); these were queried with the Elizabeth line allowed. Where a cached
+response's fastest journey uses it, the pair is re-queried without it into the same folder name plus `_no_el`
+(e.g. `data/raw/tfl_hub_transfers_no_el/`), which is read first. Delete the folders to force fresh queries.
 The TfL times were queried for Tue 10 Nov 2026 while the rail results are for Tue 2 Feb 2027. TfL can't plan that far
 ahead (2 Feb 2027 returns HTTP 500 when queried on 26 Oct 2026; 1 Dec 2026 works), so the dates can only be aligned
 closer to the service date. The arrive-by-09:00 filter compares time of day only, so cached responses stay valid.
@@ -56,12 +58,13 @@ closer to the service date. The arrive-by-09:00 filter compares time of day only
 
 `data/tfl_transfers_<CRS>.csv` (LST, DMK): `crs, name, tfl_min, modes, summary` -- final leg from each Greater London
 station to that destination, from a TfL query arriving by 09:00 on Tue 10 Nov 2026, restricted to tube, DLR,
-Overground, Elizabeth line and walking. `tfl_min` is TfL's raw duration (the router adds the allowance).
+Overground and walking (no Elizabeth line: its trains come from the timetable). `tfl_min` is TfL's raw duration (the router adds the allowance).
 Oxford and Exeter are outside Greater London and have no TfL final leg.
 
 `data/tfl_hub_transfers.csv`: `from_crs, to_crs, tfl_min, modes, summary` -- same query rules, every ordered pair of the
-31 London hubs in `router.HUBS`: 21 terminals and split codes (PAD, PDX, MYB, EUS, STP, SPL, KGX, LST, LSX, FST, CST, MOG,
-CTK, BFR, CHX, WAT, WAE, LBG, VIC, ZFD, FDX) plus 10 interchanges (WEH, WIM, ZWL, TOM, BDS, CLJ, HRW, EPH, HHY, WHP).
+33 London hubs in `router.HUBS`: 21 terminals and split codes (PAD, PDX, MYB, EUS, STP, SPL, KGX, LST, LSX, FST, CST, MOG,
+CTK, BFR, CHX, WAT, WAE, LBG, VIC, ZFD, FDX) plus 10 interchanges (WEH, WIM, ZWL, TOM, BDS, CLJ, HRW, EPH, HHY, WHP)
+and 2 Elizabeth line interchanges (TCR Tottenham Court Road, CWX Canary Wharf).
 Raw TfL duration. STP/SPL, LST/LSX and ZFD/FDX resolve to one TfL station (404 "No journey
 found") and are added as 0 min, `walk (same station)` (`tfl_transfers.SAME_STATION`), matching TfL's 0-min walk for PAD/PDX.
 
@@ -85,16 +88,18 @@ Timetable TIPLOCs missing from NaPTAN are mapped to a CRS via the MSN file and t
   is not a change.
 - **TfL final leg**: from any Greater London station to a London destination (LST, DMK),
   `arrival + TfL duration + 5 min`; not counted as a change.
-- **TfL mid-journey transfer**: between any two of the 31 London hubs, next departure at or after
+- **TfL mid-journey transfer**: between any two of the 33 London hubs, next departure at or after
   `arrival + TfL duration + 10 min` (no station MCT on top); counts as one change, shown in `changes_at` as
   `A -> B (TfL Nm)` and in `legs` as `TfL Nm: <route>` (N includes the allowance). Only at Greater London TIPLOCs.
 - **No TfL hop before 05:30** (`router.TFL_FIRST_DEP`): a mid-journey hop needs the train to arrive at 05:30 or later, and a
   journey starting with a hop must start it at 05:30 or later. Only affects Exeter (the 06:00 from Paddington).
-- **Starting in London**: a journey from one of the 31 hubs may start with a TfL hop to another hub
+- **Starting in London**: a journey from one of the 33 hubs may start with a TfL hop to another hub
   (`TfL duration + 10 min`, first entry in `legs`, not counted as a change); for LST and DMK every London station with a
   TfL route also gets a TfL-only journey (`TfL duration + 5 min`, arriving 09:00, `arrival_station` = the origin).
   Both compete with rail journeys under the usual fastest / fewer changes / later departure rule.
   Other London stations must start with a train from that station (National Rail, Overground, Elizabeth line).
+- **Elizabeth line**: timetabled trains only (CIF, operator XR), never a TfL leg, so its journeys depend on actual
+  departure times; changing onto it uses station change times, or a hub hop where the codes differ (e.g. PAD -> PDX, 0 + 10 min).
 - **Allowances**: TfL's duration runs from the first tube departure, so it excludes walking between mainline and tube
   platforms and waiting. +10 min mid-journey (both ends), +5 min final leg (one end).
 - **Map**: destination checkboxes, up to 2 (fixed GB view; a star marks each selected destination; unticking
@@ -177,10 +182,22 @@ call made during the build, open to review. Add new entries under the relevant a
       Flag later **dropped** [user]: their only gap (no tube/bus/walk to another station first) is the station-to-station
       scope that applies to every origin (D9), so it is stated once in the map panel instead.
     - Fixed duration from one TfL query per station, arriving by 09:00 on Tue 10 Nov 2026 [Claude].
-    - Modes: tube, DLR, Overground, Elizabeth line, walking; **no National Rail, no bus** [Claude] -- rail legs stay timetable-based.
+    - Modes: tube, DLR, Overground, walking; **no National Rail, no bus** [Claude] -- rail legs stay timetable-based.
+      Elizabeth line removed later (D17).
     - Elizabeth line Liverpool Street (LSX) counts as arriving at Liverpool Street [Claude].
-    - 196 of 344 Greater London stations have a TfL route under these modes; the rest are reached by train to a station that does.
+    - 176 of 344 Greater London stations have a TfL route to LST under these modes (181 to DMK; 196 / 201 with the Elizabeth line); the rest are reached by train to a station that does.
     - TfL leg applied only at Greater London TIPLOCs [Claude] -- guards against NaPTAN giving Newbury Park the CRS of Newbury Racecourse (NRC).
+  - D17 Elizabeth line from the timetable, not TfL estimates -- TfL legs gave it a fixed 09:00-arrival duration
+    (726 TfL legs in the results used it) while its trains are already in the CIF. Options: re-query TfL without it /
+    reuse cached non-Elizabeth alternatives only (122 of 329 affected pairs had one). Chose **re-query** [user]
+    (274 hub pairs incl. new ones, 106 LST and 51 DMK final legs) and **add Tottenham Court Road and Canary Wharf as hubs**
+    [user] so tube/DLR-to-Elizabeth line interchanges can still be routed. Kept cached responses whose fastest journey
+    avoided the Elizabeth line [Claude]. Effect on 2 Feb 2027: LST 193 stations changed (189 slower, median +7, max +20
+    e.g. Worcester waits for the 08:36 from Paddington; 4 faster by 1 min via TCR); DMK 118 slower (median +1, max +10);
+    OXF 59 slower (median +8, max +19); EXD 337 -> 308 stations (30 east London/Essex origins lost: they relied on a TfL
+    Elizabeth line hop reaching Paddington for the 06:00, but the first central train arrives 05:54, too late with the
+    10-min allowance; Tottenham Court Road gained). 20 Elizabeth-line-only stations lost their TfL final leg and reach
+    LST/DMK by train. Split-station origins whose sibling is the Elizabeth line code got slower (see Limitations).
 - **A4. Know how awkward each journey is**
   - D8 Changes -- chose **no limit, but record them** [user]. -> `n_changes`, `changes_at` columns; marker outline on the map.
 - **A5. Decide where to look first, then refine to areas**
@@ -220,11 +237,12 @@ call made during the build, open to review. Add new entries under the relevant a
 - TfL transfer times are fixed (one 09:00-arrival query per station or hub pair), not time-dependent; the +5/+10 min
   allowances are flat, not station-specific. The 05:30 earliest hop is one cut-off for every line (first trains vary
   by line and station).
-- Mid-journey TfL transfers only between the 31 hubs; other London stations connect by rail only (plus the final leg).
+- Mid-journey TfL transfers only between the 33 hubs; other London stations connect by rail only (plus the final leg).
 - Journeys from non-hub London stations can't start by tube/bus/walk to another station, so their times may be
   overstated (as for any origin, where driving to a better-served station isn't modelled either).
 - A journey from one CRS of a split station can't start with a train from its sibling CRS (e.g. a Whitechapel WHX
-  origin can't start on the Overground from ZWL); each NaPTAN CRS keeps its own result row.
+  origin can't start on the Overground from ZWL); each NaPTAN CRS keeps its own result row. Since D17 this also hits
+  origins that used to take a TfL Elizabeth line leg, e.g. Abbey Wood ABW -> LST 34 min vs ABX 18 + 4 min change.
 - CIF status/category/activity code tables were taken from the CIF v29 spec as the 2025 spec's tables did not extract;
   to be checked against the real feed.
 - Greater London membership is by NPTG locality, not a boundary polygon.

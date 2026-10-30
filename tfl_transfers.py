@@ -9,9 +9,11 @@ import requests
 from router import DESTINATIONS, HUBS
 
 URL = "https://api.tfl.gov.uk/Journey/JourneyResults/{}/to/{}"
+# no Elizabeth line: the router takes its trains from the timetable
 PARAMS = {"date": "20261110", "time": "0900", "timeIs": "Arriving", "journeyPreference": "LeastTime",
-          "mode": "tube,dlr,overground,elizabeth-line,walking"}
+          "mode": "tube,dlr,overground,walking"}
 ALLOWED_MODES = set(PARAMS["mode"].split(","))
+OLD_MODES = ALLOWED_MODES | {"elizabeth-line"}  # modes of the original cached queries
 ARRIVE_BY = "09:00:00"  # time of day, so cached responses for earlier query dates still filter correctly
 CACHE = Path("data/raw/tfl_transfer_modes")  # Liverpool Street; other destinations use CACHE_<CRS>
 HUB_CACHE = Path("data/raw/tfl_hub_transfers")
@@ -43,10 +45,10 @@ def search_ids(name):
     return ids
 
 
-def best_journey(response):
+def best_journey(response, modes=ALLOWED_MODES):
     journeys = [
         j for j in response.get("journeys", [])
-        if j["arrivalDateTime"][11:] <= ARRIVE_BY and all(leg["mode"]["id"] in ALLOWED_MODES for leg in j["legs"])
+        if j["arrivalDateTime"][11:] <= ARRIVE_BY and all(leg["mode"]["id"] in modes for leg in j["legs"])
     ]
     return min(journeys, key=lambda j: j["duration"], default=None)
 
@@ -61,7 +63,15 @@ def summarise(journey):
 
 
 def cached_journey(path, name, atcos, to_id):
+    # an original (Elizabeth line allowed) response stands unless its fastest journey used the Elizabeth line;
+    # those are re-queried without it into the parallel _no_el folder
+    if path.exists():
+        old = best_journey(json.loads(path.read_text()), OLD_MODES)
+        if old is None or all(leg["mode"]["id"] in ALLOWED_MODES for leg in old["legs"]):
+            return old
+    path = path.parent.with_name(path.parent.name + "_no_el") / path.name
     if not path.exists():
+        path.parent.mkdir(parents=True, exist_ok=True)
         ids = ["910G" + atco[4:] for atco in atcos]
         for i, station_id in enumerate(ids):
             response = fetch(station_id, to_id)

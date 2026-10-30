@@ -1,64 +1,68 @@
 from_crs,to_crs,tfl_min,modes,summary
 PAD,PDX,0,walking,walk
 PAD,MYB,3,tube,Bakerloo line to Marylebone
-PAD,EUS,14,elizabeth-line+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Euston"
+PAD,EUS,15,tube+tube,"Bakerloo line to Oxford Circus, Victoria line to Euston"
 PAD,STP,15,tube+walking,"Circle line to King's Cross St.Pancras, walk"
 PAD,SPL,15,tube+walking,"Circle line to King's Cross St.Pancras, walk"
 PAD,KGX,11,tube,Circle line to King's Cross St.Pancras
-PAD,LST,10,elizabeth-line,Elizabeth line to Liverpool Street Station
-PAD,LSX,10,elizabeth-line,Elizabeth line to Liverpool Street Station
-PAD,FST,28,elizabeth-line+tube+walking,"Elizabeth line to Whitechapel Station, District line to Tower Hill, walk"
-PAD,CST,27,elizabeth-line+walking+tube+walking,"Elizabeth line to Liverpool Street Station, walk, Northern line to Bank, walk"
-PAD,MOG,11,elizabeth-line+walking,"Elizabeth line to Liverpool Street Station, walk"
-PAD,CTK,28,elizabeth-line+tube+walking,"Elizabeth line to Tottenham Court Road Station, Central line to St. Paul's, walk"
-PAD,BFR,20,elizabeth-line+tube+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Embankment, District line to Blackfriars"
-PAD,CHX,11,elizabeth-line+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Charing Cross"
-PAD,WAT,13,elizabeth-line+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Waterloo"
+PAD,LST,20,tube,Circle line to Liverpool Street
+PAD,LSX,20,tube,Circle line to Liverpool Street
+PAD,FST,30,tube+walking,"Circle line to Tower Hill, walk"
+PAD,CST,29,tube+walking,"Circle line to Cannon Street, walk"
+PAD,MOG,17,tube,Circle line to Moorgate
+PAD,CTK,30,tube+tube+walking,"Bakerloo line to Oxford Circus, Central line to St. Paul's, walk"
+PAD,BFR,22,tube+tube,"Bakerloo line to Embankment, District line to Blackfriars"
+PAD,CHX,12,tube,Bakerloo line to Charing Cross
+PAD,WAT,15,tube,Bakerloo line to Waterloo
 PAD,WAE,21,tube+tube+walking,"Bakerloo line to Baker Street, Jubilee line to Southwark, walk"
 PAD,LBG,18,tube+tube,"Bakerloo line to Baker Street, Jubilee line to London Bridge"
 PAD,VIC,13,tube,Circle line to Victoria
-PAD,ZFD,8,elizabeth-line,Elizabeth line to Farringdon Station
-PAD,FDX,8,elizabeth-line,Elizabeth line to Farringdon Station
-PAD,WEH,27,elizabeth-line+tube,"Elizabeth line to Whitechapel Station, District line to West Ham"
+PAD,ZFD,15,tube,Hammersmith & City line to Farringdon
+PAD,FDX,15,tube,Hammersmith & City line to Farringdon
+PAD,WEH,32,tube+tube,"Bakerloo line to Baker Street, Jubilee line to West Ham"
 PAD,WIM,27,tube,District line to Wimbledon
-PAD,ZWL,13,elizabeth-line,Elizabeth line to Whitechapel Station
+PAD,ZWL,25,tube,Hammersmith & City line to Whitechapel
 PAD,TOM,27,tube+tube,"Bakerloo line to Oxford Circus, Victoria line to Tottenham Hale"
-PAD,BDS,3,elizabeth-line,Elizabeth line to Bond Street Station
+PAD,BDS,8,tube+tube,"Bakerloo line to Baker Street, Jubilee line to Bond Street"
 PAD,CLJ,27,tube+overground,"District line to West Brompton, Mildmay line to Clapham Junction Rail Station"
 PAD,HRW,32,tube,Bakerloo line to Harrow & Wealdstone
 PAD,EPH,28,tube+walking,"Bakerloo line to Elephant & Castle, walk"
 PAD,HHY,19,tube+tube,"Bakerloo line to Oxford Circus, Victoria line to Highbury & Islington"
 PAD,WHP,17,tube+tube+walking,"Bakerloo line to Baker Street, Jubilee line to West Hampstead, walk"
+PAD,TCR,13,tube+tube,"Bakerloo line to Oxford Circus, Central line to Tottenham Court Road"
+PAD,CWX,34,tube+tube+walking,"Bakerloo line to Baker Street, Jubilee line to Canary Wharf, walk"
 PDX,PAD,0,walking,walk
 PDX,MYB,3,tube,Bakerloo line to Marylebone
-PDX,EUS,14,elizabeth-line+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Euston"
+PDX,EUS,15,tube+tube,"Bakerloo line to Oxford Circus, Victoria line to Euston"
 PDX,STP,15,tube+walking,"Circle line to King's Cross St.Pancras, walk"
 PDX,SPL,15,tube+walking,"Circle line to King's Cross St.Pancras, walk"
 PDX,KGX,11,tube,Circle line to King's Cross St.Pancras
-PDX,LST,10,elizabeth-line,Elizabeth line to Liverpool Street Station
-PDX,LSX,10,elizabeth-line,Elizabeth line to Liverpool Street Station
-PDX,FST,28,elizabeth-line+tube+walking,"Elizabeth line to Whitechapel Station, District line to Tower Hill, walk"
-PDX,CST,27,elizabeth-line+walking+tube+walking,"Elizabeth line to Liverpool Street Station, walk, Northern line to Bank, walk"
-PDX,MOG,11,elizabeth-line+walking,"Elizabeth line to Liverpool Street Station, walk"
-PDX,CTK,28,elizabeth-line+tube+walking,"Elizabeth line to Tottenham Court Road Station, Central line to St. Paul's, walk"
-PDX,BFR,20,elizabeth-line+tube+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Embankment, District line to Blackfriars"
-PDX,CHX,11,elizabeth-line+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Charing Cross"
-PDX,WAT,13,elizabeth-line+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Waterloo"
+PDX,LST,20,tube,Circle line to Liverpool Street
+PDX,LSX,20,tube,Circle line to Liverpool Street
+PDX,FST,30,tube+walking,"Circle line to Tower Hill, walk"
+PDX,CST,29,tube+walking,"Circle line to Cannon Street, walk"
+PDX,MOG,17,tube,Circle line to Moorgate
+PDX,CTK,30,tube+tube+walking,"Bakerloo line to Oxford Circus, Central line to St. Paul's, walk"
+PDX,BFR,22,tube+tube,"Bakerloo line to Embankment, District line to Blackfriars"
+PDX,CHX,12,tube,Bakerloo line to Charing Cross
+PDX,WAT,15,tube,Bakerloo line to Waterloo
 PDX,WAE,21,tube+tube+walking,"Bakerloo line to Baker Street, Jubilee line to Southwark, walk"
 PDX,LBG,18,tube+tube,"Bakerloo line to Baker Street, Jubilee line to London Bridge"
 PDX,VIC,13,tube,Circle line to Victoria
-PDX,ZFD,8,elizabeth-line,Elizabeth line to Farringdon Station
-PDX,FDX,8,elizabeth-line,Elizabeth line to Farringdon Station
-PDX,WEH,27,elizabeth-line+tube,"Elizabeth line to Whitechapel Station, District line to West Ham"
+PDX,ZFD,15,tube,Hammersmith & City line to Farringdon
+PDX,FDX,15,tube,Hammersmith & City line to Farringdon
+PDX,WEH,32,tube+tube,"Bakerloo line to Baker Street, Jubilee line to West Ham"
 PDX,WIM,27,tube,District line to Wimbledon
-PDX,ZWL,13,elizabeth-line,Elizabeth line to Whitechapel Station
+PDX,ZWL,25,tube,Hammersmith & City line to Whitechapel
 PDX,TOM,27,tube+tube,"Bakerloo line to Oxford Circus, Victoria line to Tottenham Hale"
-PDX,BDS,3,elizabeth-line,Elizabeth line to Bond Street Station
+PDX,BDS,8,tube+tube,"Bakerloo line to Baker Street, Jubilee line to Bond Street"
 PDX,CLJ,27,tube+overground,"District line to West Brompton, Mildmay line to Clapham Junction Rail Station"
 PDX,HRW,32,tube,Bakerloo line to Harrow & Wealdstone
 PDX,EPH,28,tube+walking,"Bakerloo line to Elephant & Castle, walk"
 PDX,HHY,19,tube+tube,"Bakerloo line to Oxford Circus, Victoria line to Highbury & Islington"
 PDX,WHP,17,tube+tube+walking,"Bakerloo line to Baker Street, Jubilee line to West Hampstead, walk"
+PDX,TCR,13,tube+tube,"Bakerloo line to Oxford Circus, Central line to Tottenham Court Road"
+PDX,CWX,34,tube+tube+walking,"Bakerloo line to Baker Street, Jubilee line to Canary Wharf, walk"
 MYB,PAD,3,tube,Bakerloo line to Paddington
 MYB,PDX,3,tube,Bakerloo line to Paddington
 MYB,EUS,12,tube+tube,"Bakerloo line to Oxford Circus, Victoria line to Euston"
@@ -81,7 +85,7 @@ MYB,ZFD,15,tube+tube,"Bakerloo line to Baker Street, Metropolitan line to Farrin
 MYB,FDX,15,tube+tube,"Bakerloo line to Baker Street, Metropolitan line to Farringdon"
 MYB,WEH,29,tube+tube,"Bakerloo line to Baker Street, Jubilee line to West Ham"
 MYB,WIM,37,walking+tube,"walk, District line to Wimbledon"
-MYB,ZWL,24,tube+walking+elizabeth-line,"Bakerloo line to Paddington, walk, Elizabeth line to Whitechapel Station"
+MYB,ZWL,28,walking+tube,"walk, Hammersmith & City line to Whitechapel"
 MYB,TOM,24,tube+tube,"Bakerloo line to Oxford Circus, Victoria line to Tottenham Hale"
 MYB,BDS,5,tube+tube,"Bakerloo line to Baker Street, Jubilee line to Bond Street"
 MYB,CLJ,38,walking+tube+overground,"walk, District line to West Brompton, Mildmay line to Clapham Junction Rail Station"
@@ -89,8 +93,10 @@ MYB,HRW,35,tube,Bakerloo line to Harrow & Wealdstone
 MYB,EPH,25,tube+walking,"Bakerloo line to Elephant & Castle, walk"
 MYB,HHY,16,tube+tube,"Bakerloo line to Oxford Circus, Victoria line to Highbury & Islington"
 MYB,WHP,14,tube+tube+walking,"Bakerloo line to Baker Street, Jubilee line to West Hampstead, walk"
-EUS,PAD,15,tube+elizabeth-line,"Northern line to Tottenham Court Road, Elizabeth line to Paddington Station"
-EUS,PDX,15,tube+elizabeth-line,"Northern line to Tottenham Court Road, Elizabeth line to Paddington Station"
+MYB,TCR,10,tube+tube,"Bakerloo line to Oxford Circus, Central line to Tottenham Court Road"
+MYB,CWX,31,tube+tube+walking,"Bakerloo line to Baker Street, Jubilee line to Canary Wharf, walk"
+EUS,PAD,15,tube+tube,"Victoria line to Oxford Circus, Bakerloo line to Paddington"
+EUS,PDX,15,tube+tube,"Victoria line to Oxford Circus, Bakerloo line to Paddington"
 EUS,MYB,12,tube+tube,"Victoria line to Oxford Circus, Bakerloo line to Marylebone"
 EUS,STP,5,tube+walking,"Victoria line to King's Cross St.Pancras, walk"
 EUS,SPL,5,tube+walking,"Victoria line to King's Cross St.Pancras, walk"
@@ -111,7 +117,7 @@ EUS,ZFD,11,tube+tube,"Victoria line to King's Cross St.Pancras, Metropolitan lin
 EUS,FDX,11,tube+tube,"Victoria line to King's Cross St.Pancras, Metropolitan line to Farringdon"
 EUS,WEH,30,tube+tube+tube,"Northern line to Tottenham Court Road, Central line to Mile End, District line to West Ham"
 EUS,WIM,38,tube+tube,"Victoria line to Victoria, District line to Wimbledon"
-EUS,ZWL,16,tube+elizabeth-line,"Northern line to Tottenham Court Road, Elizabeth line to Whitechapel Station"
+EUS,ZWL,22,tube+overground,"Victoria line to Highbury & Islington, Windrush line to Whitechapel Rail Station"
 EUS,TOM,12,tube,Victoria line to Tottenham Hale
 EUS,BDS,8,tube+tube,"Victoria line to Oxford Circus, Central line to Bond Street"
 EUS,CLJ,36,tube+tube+overground,"Victoria line to Victoria, District line to West Brompton, Mildmay line to Clapham Junction Rail Station"
@@ -119,6 +125,8 @@ EUS,HRW,30,overground,Lioness line to Harrow & Wealdstone Rail Station
 EUS,EPH,22,tube+walking,"Northern line to Elephant & Castle, walk"
 EUS,HHY,4,tube,Victoria line to Highbury & Islington
 EUS,WHP,25,tube+tube+tube+walking,"Victoria line to Oxford Circus, Bakerloo line to Baker Street, Jubilee line to West Hampstead, walk"
+EUS,TCR,4,tube,Northern line to Tottenham Court Road
+EUS,CWX,29,tube+dlr+walking,"Northern line to Bank, DLR to Poplar DLR Station, walk"
 STP,PAD,14,walking+tube,"walk, Hammersmith & City line to Paddington (H&C Line)"
 STP,PDX,14,walking+tube,"walk, Hammersmith & City line to Paddington (H&C Line)"
 STP,MYB,17,walking+tube+tube,"walk, Metropolitan line to Baker Street, Bakerloo line to Marylebone"
@@ -141,7 +149,7 @@ STP,ZFD,7,walking+tube,"walk, Metropolitan line to Farringdon"
 STP,FDX,7,walking+tube,"walk, Metropolitan line to Farringdon"
 STP,WEH,27,walking+tube,"walk, Hammersmith & City line to West Ham"
 STP,WIM,44,walking+tube+tube,"walk, Victoria line to Victoria, District line to Wimbledon"
-STP,ZWL,21,walking+tube+walking+elizabeth-line,"walk, Metropolitan line to Moorgate, walk, Elizabeth line to Whitechapel Station"
+STP,ZWL,18,walking+tube,"walk, Hammersmith & City line to Whitechapel"
 STP,TOM,14,walking+tube,"walk, Victoria line to Tottenham Hale"
 STP,BDS,14,walking+tube+tube,"walk, Victoria line to Oxford Circus, Central line to Bond Street"
 STP,CLJ,42,walking+tube+tube+overground,"walk, Victoria line to Victoria, District line to West Brompton, Mildmay line to Clapham Junction Rail Station"
@@ -149,6 +157,8 @@ STP,HRW,43,walking+tube+overground,"walk, Victoria line to Euston, Lioness line 
 STP,EPH,27,walking+tube+walking,"walk, Northern line to Elephant & Castle, walk"
 STP,HHY,6,walking+tube,"walk, Victoria line to Highbury & Islington"
 STP,WHP,23,walking+tube+tube+walking,"walk, Metropolitan line to Finchley Road, Jubilee line to West Hampstead, walk"
+STP,TCR,15,walking+tube+tube,"walk, Victoria line to Euston, Northern line to Tottenham Court Road"
+STP,CWX,34,walking+tube+dlr+walking,"walk, Northern line to Bank, DLR to Poplar DLR Station, walk"
 SPL,PAD,14,walking+tube,"walk, Hammersmith & City line to Paddington (H&C Line)"
 SPL,PDX,14,walking+tube,"walk, Hammersmith & City line to Paddington (H&C Line)"
 SPL,MYB,17,walking+tube+tube,"walk, Metropolitan line to Baker Street, Bakerloo line to Marylebone"
@@ -171,7 +181,7 @@ SPL,ZFD,7,walking+tube,"walk, Metropolitan line to Farringdon"
 SPL,FDX,7,walking+tube,"walk, Metropolitan line to Farringdon"
 SPL,WEH,27,walking+tube,"walk, Hammersmith & City line to West Ham"
 SPL,WIM,44,walking+tube+tube,"walk, Victoria line to Victoria, District line to Wimbledon"
-SPL,ZWL,21,walking+tube+walking+elizabeth-line,"walk, Metropolitan line to Moorgate, walk, Elizabeth line to Whitechapel Station"
+SPL,ZWL,18,walking+tube,"walk, Hammersmith & City line to Whitechapel"
 SPL,TOM,14,walking+tube,"walk, Victoria line to Tottenham Hale"
 SPL,BDS,14,walking+tube+tube,"walk, Victoria line to Oxford Circus, Central line to Bond Street"
 SPL,CLJ,42,walking+tube+tube+overground,"walk, Victoria line to Victoria, District line to West Brompton, Mildmay line to Clapham Junction Rail Station"
@@ -179,6 +189,8 @@ SPL,HRW,43,walking+tube+overground,"walk, Victoria line to Euston, Lioness line 
 SPL,EPH,27,walking+tube+walking,"walk, Northern line to Elephant & Castle, walk"
 SPL,HHY,6,walking+tube,"walk, Victoria line to Highbury & Islington"
 SPL,WHP,23,walking+tube+tube+walking,"walk, Metropolitan line to Finchley Road, Jubilee line to West Hampstead, walk"
+SPL,TCR,15,walking+tube+tube,"walk, Victoria line to Euston, Northern line to Tottenham Court Road"
+SPL,CWX,34,walking+tube+dlr+walking,"walk, Northern line to Bank, DLR to Poplar DLR Station, walk"
 KGX,PAD,10,tube,Hammersmith & City line to Paddington (H&C Line)
 KGX,PDX,10,tube,Hammersmith & City line to Paddington (H&C Line)
 KGX,MYB,13,tube+tube,"Metropolitan line to Baker Street, Bakerloo line to Marylebone"
@@ -201,7 +213,7 @@ KGX,ZFD,3,tube,Metropolitan line to Farringdon
 KGX,FDX,3,tube,Metropolitan line to Farringdon
 KGX,WEH,23,tube,Hammersmith & City line to West Ham
 KGX,WIM,40,tube+tube,"Victoria line to Victoria, District line to Wimbledon"
-KGX,ZWL,14,tube+walking+elizabeth-line,"Northern line to Moorgate, walk, Elizabeth line to Whitechapel Station"
+KGX,ZWL,14,tube,Hammersmith & City line to Whitechapel
 KGX,TOM,10,tube,Victoria line to Tottenham Hale
 KGX,BDS,10,tube+tube,"Victoria line to Oxford Circus, Central line to Bond Street"
 KGX,CLJ,38,tube+tube+overground,"Victoria line to Victoria, District line to West Brompton, Mildmay line to Clapham Junction Rail Station"
@@ -209,8 +221,10 @@ KGX,HRW,38,tube+overground,"Northern line to Euston, Lioness line to Harrow & We
 KGX,EPH,20,tube+walking,"Northern line to Elephant & Castle, walk"
 KGX,HHY,2,tube,Victoria line to Highbury & Islington
 KGX,WHP,19,tube+tube+walking,"Metropolitan line to Finchley Road, Jubilee line to West Hampstead, walk"
-LST,PAD,11,elizabeth-line,Elizabeth line to Paddington Station
-LST,PDX,11,elizabeth-line,Elizabeth line to Paddington Station
+KGX,TCR,11,tube+tube,"Victoria line to Euston, Northern line to Tottenham Court Road"
+KGX,CWX,27,tube+dlr+walking,"Northern line to Bank, DLR to Poplar DLR Station, walk"
+LST,PAD,18,tube,Hammersmith & City line to Paddington (H&C Line)
+LST,PDX,18,tube,Hammersmith & City line to Paddington (H&C Line)
 LST,MYB,20,tube+tube,"Central line to Oxford Circus, Bakerloo line to Marylebone"
 LST,EUS,13,walking+tube,"walk, Northern line to Euston"
 LST,STP,12,tube+walking,"Metropolitan line to King's Cross St.Pancras, walk"
@@ -222,25 +236,27 @@ LST,CST,11,tube+walking,"Central line to Bank, walk"
 LST,MOG,1,tube,Circle line to Moorgate
 LST,CTK,13,tube+walking,"Central line to St. Paul's, walk"
 LST,BFR,11,tube,Circle line to Blackfriars
-LST,CHX,10,elizabeth-line+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Charing Cross"
+LST,CHX,17,tube+tube,"Central line to Tottenham Court Road, Northern line to Charing Cross"
 LST,WAT,10,tube+tube,"Central line to Bank, Waterloo & City line to Waterloo"
 LST,WAE,21,tube+tube+walking,"Central line to Bank, Waterloo & City line to Waterloo, walk"
 LST,LBG,9,walking+tube,"walk, Northern line to London Bridge"
 LST,VIC,19,tube+tube,"Central line to Oxford Circus, Victoria line to Victoria"
-LST,ZFD,2,elizabeth-line,Elizabeth line to Farringdon Station
-LST,FDX,2,elizabeth-line,Elizabeth line to Farringdon Station
+LST,ZFD,4,tube,Metropolitan line to Farringdon
+LST,FDX,4,tube,Metropolitan line to Farringdon
 LST,WEH,11,tube+tube,"Central line to Mile End, District line to West Ham"
 LST,WIM,46,tube+tube,"Central line to Notting Hill Gate, District line to Wimbledon"
-LST,ZWL,2,elizabeth-line,Elizabeth line to Whitechapel Station
+LST,ZWL,5,tube,Hammersmith & City line to Whitechapel
 LST,TOM,24,tube+tube,"Metropolitan line to King's Cross St.Pancras, Victoria line to Tottenham Hale"
-LST,BDS,7,elizabeth-line,Elizabeth line to Bond Street Station
-LST,CLJ,42,elizabeth-line+overground,"Elizabeth line to Whitechapel Station, Windrush line to Clapham Junction Rail Station"
-LST,HRW,48,elizabeth-line+tube+overground,"Elizabeth line to Tottenham Court Road Station, Northern line to Euston, Lioness line to Harrow & Wealdstone Rail Station"
+LST,BDS,12,tube,Central line to Bond Street
+LST,CLJ,43,walking+tube+walking+overground,"walk, Northern line to Clapham North, walk, Windrush line to Clapham Junction Rail Station"
+LST,HRW,48,tube+walking+overground,"Metropolitan line to Northwick Park, walk, Lioness line to Harrow & Wealdstone Rail Station"
 LST,EPH,19,walking+tube+walking,"walk, Northern line to Elephant & Castle, walk"
 LST,HHY,15,tube+tube,"Hammersmith & City line to King's Cross St.Pancras, Victoria line to Highbury & Islington"
 LST,WHP,27,tube+tube+walking,"Metropolitan line to Finchley Road, Jubilee line to West Hampstead, walk"
-LSX,PAD,11,elizabeth-line,Elizabeth line to Paddington Station
-LSX,PDX,11,elizabeth-line,Elizabeth line to Paddington Station
+LST,TCR,9,tube,Central line to Tottenham Court Road
+LST,CWX,20,tube+dlr+walking,"Central line to Bank, DLR to Poplar DLR Station, walk"
+LSX,PAD,18,tube,Hammersmith & City line to Paddington (H&C Line)
+LSX,PDX,18,tube,Hammersmith & City line to Paddington (H&C Line)
 LSX,MYB,20,tube+tube,"Central line to Oxford Circus, Bakerloo line to Marylebone"
 LSX,EUS,13,walking+tube,"walk, Northern line to Euston"
 LSX,STP,12,tube+walking,"Metropolitan line to King's Cross St.Pancras, walk"
@@ -252,25 +268,27 @@ LSX,CST,11,tube+walking,"Central line to Bank, walk"
 LSX,MOG,1,tube,Circle line to Moorgate
 LSX,CTK,13,tube+walking,"Central line to St. Paul's, walk"
 LSX,BFR,11,tube,Circle line to Blackfriars
-LSX,CHX,10,elizabeth-line+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Charing Cross"
+LSX,CHX,17,tube+tube,"Central line to Tottenham Court Road, Northern line to Charing Cross"
 LSX,WAT,10,tube+tube,"Central line to Bank, Waterloo & City line to Waterloo"
 LSX,WAE,21,tube+tube+walking,"Central line to Bank, Waterloo & City line to Waterloo, walk"
 LSX,LBG,9,walking+tube,"walk, Northern line to London Bridge"
 LSX,VIC,19,tube+tube,"Central line to Oxford Circus, Victoria line to Victoria"
-LSX,ZFD,2,elizabeth-line,Elizabeth line to Farringdon Station
-LSX,FDX,2,elizabeth-line,Elizabeth line to Farringdon Station
+LSX,ZFD,4,tube,Metropolitan line to Farringdon
+LSX,FDX,4,tube,Metropolitan line to Farringdon
 LSX,WEH,11,tube+tube,"Central line to Mile End, District line to West Ham"
 LSX,WIM,46,tube+tube,"Central line to Notting Hill Gate, District line to Wimbledon"
-LSX,ZWL,2,elizabeth-line,Elizabeth line to Whitechapel Station
+LSX,ZWL,5,tube,Hammersmith & City line to Whitechapel
 LSX,TOM,24,tube+tube,"Metropolitan line to King's Cross St.Pancras, Victoria line to Tottenham Hale"
-LSX,BDS,7,elizabeth-line,Elizabeth line to Bond Street Station
-LSX,CLJ,42,elizabeth-line+overground,"Elizabeth line to Whitechapel Station, Windrush line to Clapham Junction Rail Station"
-LSX,HRW,48,elizabeth-line+tube+overground,"Elizabeth line to Tottenham Court Road Station, Northern line to Euston, Lioness line to Harrow & Wealdstone Rail Station"
+LSX,BDS,12,tube,Central line to Bond Street
+LSX,CLJ,43,walking+tube+walking+overground,"walk, Northern line to Clapham North, walk, Windrush line to Clapham Junction Rail Station"
+LSX,HRW,48,tube+walking+overground,"Metropolitan line to Northwick Park, walk, Lioness line to Harrow & Wealdstone Rail Station"
 LSX,EPH,19,walking+tube+walking,"walk, Northern line to Elephant & Castle, walk"
 LSX,HHY,15,tube+tube,"Hammersmith & City line to King's Cross St.Pancras, Victoria line to Highbury & Islington"
 LSX,WHP,27,tube+tube+walking,"Metropolitan line to Finchley Road, Jubilee line to West Hampstead, walk"
-FST,PAD,27,walking+tube+elizabeth-line,"walk, District line to Whitechapel, Elizabeth line to Paddington Station"
-FST,PDX,27,walking+tube+elizabeth-line,"walk, District line to Whitechapel, Elizabeth line to Paddington Station"
+LSX,TCR,9,tube,Central line to Tottenham Court Road
+LSX,CWX,20,tube+dlr+walking,"Central line to Bank, DLR to Poplar DLR Station, walk"
+FST,PAD,31,walking+tube,"walk, Circle line to Paddington (H&C Line)"
+FST,PDX,31,walking+tube,"walk, Circle line to Paddington (H&C Line)"
 FST,MYB,30,walking+tube+tube,"walk, District line to Embankment, Bakerloo line to Marylebone"
 FST,EUS,23,walking+tube+walking+tube,"walk, District line to Monument, walk, Northern line to Euston"
 FST,STP,22,walking+tube+walking,"walk, Circle line to King's Cross St.Pancras, walk"
@@ -293,14 +311,16 @@ FST,WEH,18,walking+tube,"walk, District line to West Ham"
 FST,WIM,46,walking+tube,"walk, District line to Wimbledon"
 FST,ZWL,9,walking+tube,"walk, District line to Whitechapel"
 FST,TOM,36,walking+tube+tube,"walk, Metropolitan line to King's Cross St.Pancras, Victoria line to Tottenham Hale"
-FST,BDS,24,walking+tube+elizabeth-line,"walk, District line to Whitechapel, Elizabeth line to Bond Street Station"
+FST,BDS,26,walking+tube+tube,"walk, District line to Westminster, Jubilee line to Bond Street"
 FST,CLJ,44,walking+tube+overground,"walk, District line to West Brompton, Mildmay line to Clapham Junction Rail Station"
 FST,HRW,57,walking+tube+walking+tube+overground,"walk, District line to Monument, walk, Northern line to Euston, Lioness line to Harrow & Wealdstone Rail Station"
 FST,EPH,24,walking+tube+walking+tube+walking,"walk, Circle line to Monument, walk, Northern line to Elephant & Castle, walk"
 FST,HHY,26,walking+tube+overground,"walk, District line to Whitechapel, Windrush line to Highbury & Islington Rail Station"
 FST,WHP,39,walking+tube+tube+walking,"walk, Metropolitan line to Finchley Road, Jubilee line to West Hampstead, walk"
-CST,PAD,27,walking+tube+walking+elizabeth-line,"walk, Northern line to Moorgate, walk, Elizabeth line to Paddington Station"
-CST,PDX,27,walking+tube+walking+elizabeth-line,"walk, Northern line to Moorgate, walk, Elizabeth line to Paddington Station"
+FST,TCR,23,walking+tube+tube,"walk, District line to Embankment, Northern line to Tottenham Court Road"
+FST,CWX,22,walking+dlr+walking,"walk, DLR to Poplar DLR Station, walk"
+CST,PAD,28,walking+tube+tube,"walk, District line to Embankment, Bakerloo line to Paddington"
+CST,PDX,28,walking+tube+tube,"walk, District line to Embankment, Bakerloo line to Paddington"
 CST,MYB,25,walking+tube+tube,"walk, District line to Embankment, Bakerloo line to Marylebone"
 CST,EUS,19,walking+tube,"walk, Northern line to Euston"
 CST,STP,24,walking+tube+walking,"walk, Northern line to King's Cross St.Pancras, walk"
@@ -317,8 +337,8 @@ CST,WAT,11,walking+tube,"walk, Waterloo & City line to Waterloo"
 CST,WAE,22,walking+tube+walking,"walk, Waterloo & City line to Waterloo, walk"
 CST,LBG,11,walking+tube,"walk, Northern line to London Bridge"
 CST,VIC,15,walking+tube,"walk, District line to Victoria"
-CST,ZFD,18,walking+tube+walking+elizabeth-line,"walk, Northern line to Moorgate, walk, Elizabeth line to Farringdon Station"
-CST,FDX,18,walking+tube+walking+elizabeth-line,"walk, Northern line to Moorgate, walk, Elizabeth line to Farringdon Station"
+CST,ZFD,19,walking+tube,"walk, Circle line to Farringdon"
+CST,FDX,19,walking+tube,"walk, Circle line to Farringdon"
 CST,WEH,21,walking+tube,"walk, District line to West Ham"
 CST,WIM,41,walking+tube,"walk, District line to Wimbledon"
 CST,ZWL,11,walking+tube,"walk, District line to Whitechapel"
@@ -329,8 +349,10 @@ CST,HRW,55,walking+tube+overground,"walk, Northern line to Euston, Lioness line 
 CST,EPH,20,walking+tube+walking,"walk, Northern line to Elephant & Castle, walk"
 CST,HHY,26,walking+tube+tube,"walk, Northern line to Euston, Victoria line to Highbury & Islington"
 CST,WHP,35,walking+tube+tube+walking,"walk, District line to Westminster, Jubilee line to West Hampstead, walk"
-MOG,PAD,12,walking+elizabeth-line,"walk, Elizabeth line to Paddington Station"
-MOG,PDX,12,walking+elizabeth-line,"walk, Elizabeth line to Paddington Station"
+CST,TCR,16,walking+tube,"walk, Central line to Tottenham Court Road"
+CST,CWX,24,walking+dlr+walking,"walk, DLR to Poplar DLR Station, walk"
+MOG,PAD,16,tube,Hammersmith & City line to Paddington (H&C Line)
+MOG,PDX,16,tube,Hammersmith & City line to Paddington (H&C Line)
 MOG,MYB,19,tube+tube,"Metropolitan line to Baker Street, Bakerloo line to Marylebone"
 MOG,EUS,8,tube,Northern line to Euston
 MOG,STP,10,tube+walking,"Metropolitan line to King's Cross St.Pancras, walk"
@@ -342,23 +364,25 @@ MOG,FST,13,tube+walking,"Circle line to Tower Hill, walk"
 MOG,CST,11,tube+walking,"Northern line to Bank, walk"
 MOG,CTK,16,walking,walk
 MOG,BFR,11,tube+walking+tube,"Northern line to Bank, walk, District line to Blackfriars"
-MOG,CHX,11,walking+elizabeth-line+tube,"walk, Elizabeth line to Tottenham Court Road Station, Northern line to Charing Cross"
-MOG,WAT,14,walking+elizabeth-line+tube,"walk, Elizabeth line to Tottenham Court Road Station, Northern line to Waterloo"
+MOG,CHX,19,tube+tube,"Northern line to Euston, Northern line to Charing Cross"
+MOG,WAT,14,tube+tube,"Northern line to Bank, Waterloo & City line to Waterloo"
 MOG,WAE,17,tube+tube+walking,"Northern line to London Bridge, Jubilee line to Southwark, walk"
 MOG,LBG,4,tube,Northern line to London Bridge
 MOG,VIC,19,tube+tube,"Northern line to Euston, Victoria line to Victoria"
-MOG,ZFD,3,walking+elizabeth-line,"walk, Elizabeth line to Farringdon Station"
-MOG,FDX,3,walking+elizabeth-line,"walk, Elizabeth line to Farringdon Station"
+MOG,ZFD,3,tube,Metropolitan line to Farringdon
+MOG,FDX,3,tube,Metropolitan line to Farringdon
 MOG,WEH,16,tube,Hammersmith & City line to West Ham
 MOG,WIM,47,tube+walking+tube,"Northern line to Bank, walk, District line to Wimbledon"
-MOG,ZWL,3,walking+elizabeth-line,"walk, Elizabeth line to Whitechapel Station"
+MOG,ZWL,7,tube,Hammersmith & City line to Whitechapel
 MOG,TOM,23,tube+tube,"Northern line to Euston, Victoria line to Tottenham Hale"
-MOG,BDS,8,walking+elizabeth-line,"walk, Elizabeth line to Bond Street Station"
+MOG,BDS,18,tube+tube,"Circle line to Liverpool Street, Central line to Bond Street"
 MOG,CLJ,38,tube+walking+overground,"Northern line to Clapham North, walk, Windrush line to Clapham Junction Rail Station"
 MOG,HRW,44,tube+overground,"Northern line to Euston, Lioness line to Harrow & Wealdstone Rail Station"
 MOG,EPH,14,tube+walking,"Northern line to Elephant & Castle, walk"
 MOG,HHY,15,tube+tube,"Northern line to Euston, Victoria line to Highbury & Islington"
 MOG,WHP,26,tube+tube+walking,"Metropolitan line to Finchley Road, Jubilee line to West Hampstead, walk"
+MOG,TCR,15,tube+tube,"Metropolitan line to Liverpool Street, Central line to Tottenham Court Road"
+MOG,CWX,20,tube+dlr+walking,"Northern line to Bank, DLR to Poplar DLR Station, walk"
 CTK,PAD,28,walking+tube+tube,"walk, Central line to Oxford Circus, Bakerloo line to Paddington"
 CTK,PDX,28,walking+tube+tube,"walk, Central line to Oxford Circus, Bakerloo line to Paddington"
 CTK,MYB,25,walking+tube+tube,"walk, Central line to Oxford Circus, Bakerloo line to Marylebone"
@@ -381,7 +405,7 @@ CTK,ZFD,8,walking,walk
 CTK,FDX,8,walking,walk
 CTK,WEH,27,walking+tube+tube,"walk, Central line to Mile End, District line to West Ham"
 CTK,WIM,51,walking+tube+tube,"walk, Central line to Notting Hill Gate, District line to Wimbledon"
-CTK,ZWL,25,walking+tube+elizabeth-line,"walk, Central line to Liverpool Street, Elizabeth line to Whitechapel Station"
+CTK,ZWL,29,walking+tube+tube,"walk, Central line to Mile End, District line to Whitechapel"
 CTK,TOM,35,walking+tube+tube,"walk, Central line to Oxford Circus, Victoria line to Tottenham Hale"
 CTK,BDS,17,walking+tube,"walk, Central line to Bond Street"
 CTK,CLJ,50,walking+tube+walking+overground,"walk, Central line to Shepherd's Bush (Central Line) Underground Stn, walk, Mildmay line to Clapham Junction Rail Station"
@@ -389,8 +413,10 @@ CTK,HRW,58,walking+tube+tube+overground,"walk, Central line to Oxford Circus, Vi
 CTK,EPH,29,walking+tube+tube+walking,"walk, Central line to Bank, Northern line to Elephant & Castle, walk"
 CTK,HHY,27,walking+tube+tube,"walk, Central line to Oxford Circus, Victoria line to Highbury & Islington"
 CTK,WHP,35,walking+tube+tube+walking,"walk, Central line to Bond Street, Jubilee line to West Hampstead, walk"
-BFR,PAD,22,tube+tube+elizabeth-line,"District line to Embankment, Northern line to Tottenham Court Road, Elizabeth line to Paddington Station"
-BFR,PDX,22,tube+tube+elizabeth-line,"District line to Embankment, Northern line to Tottenham Court Road, Elizabeth line to Paddington Station"
+CTK,TCR,14,walking+tube,"walk, Central line to Tottenham Court Road"
+CTK,CWX,31,walking+tube+dlr+walking,"walk, Central line to Bank, DLR to Poplar DLR Station, walk"
+BFR,PAD,22,tube+tube,"District line to Embankment, Bakerloo line to Paddington"
+BFR,PDX,22,tube+tube,"District line to Embankment, Bakerloo line to Paddington"
 BFR,MYB,19,tube+tube,"District line to Embankment, Bakerloo line to Marylebone"
 BFR,EUS,17,tube+tube,"District line to Embankment, Northern line to Euston"
 BFR,STP,24,tube+tube+walking,"District line to Victoria, Victoria line to King's Cross St.Pancras, walk"
@@ -419,36 +445,40 @@ BFR,HRW,52,tube+tube+tube+walking+overground,"District line to Westminster, Jubi
 BFR,EPH,21,tube+walking+tube+walking,"District line to Monument, walk, Northern line to Elephant & Castle, walk"
 BFR,HHY,22,tube+tube,"District line to Victoria, Victoria line to Highbury & Islington"
 BFR,WHP,29,tube+tube+walking,"District line to Westminster, Jubilee line to West Hampstead, walk"
-CHX,PAD,12,tube+elizabeth-line,"Northern line to Tottenham Court Road, Elizabeth line to Paddington Station"
-CHX,PDX,12,tube+elizabeth-line,"Northern line to Tottenham Court Road, Elizabeth line to Paddington Station"
+BFR,TCR,12,tube+tube,"District line to Embankment, Northern line to Tottenham Court Road"
+BFR,CWX,27,tube+walking+dlr+walking,"Circle line to Monument, walk, DLR to Poplar DLR Station, walk"
+CHX,PAD,12,tube,Bakerloo line to Paddington
+CHX,PDX,12,tube,Bakerloo line to Paddington
 CHX,MYB,9,tube,Bakerloo line to Marylebone
 CHX,EUS,7,tube,Northern line to Euston
 CHX,STP,15,tube+tube+walking,"Bakerloo line to Oxford Circus, Victoria line to King's Cross St.Pancras, walk"
 CHX,SPL,15,tube+tube+walking,"Bakerloo line to Oxford Circus, Victoria line to King's Cross St.Pancras, walk"
 CHX,KGX,11,tube+tube,"Bakerloo line to Oxford Circus, Victoria line to King's Cross St.Pancras"
-CHX,LST,10,tube+elizabeth-line,"Northern line to Tottenham Court Road, Elizabeth line to Liverpool Street Station"
-CHX,LSX,10,tube+elizabeth-line,"Northern line to Tottenham Court Road, Elizabeth line to Liverpool Street Station"
+CHX,LST,16,tube+tube,"Northern line to Tottenham Court Road, Central line to Liverpool Street"
+CHX,LSX,16,tube+tube,"Northern line to Tottenham Court Road, Central line to Liverpool Street"
 CHX,FST,22,tube+tube+walking,"Bakerloo line to Embankment, District line to Tower Hill, walk"
 CHX,CST,17,tube+tube+walking,"Northern line to Embankment, Circle line to Cannon Street, walk"
-CHX,MOG,11,tube+elizabeth-line+walking,"Northern line to Tottenham Court Road, Elizabeth line to Liverpool Street Station, walk"
+CHX,MOG,18,tube+tube,"Bakerloo line to Elephant & Castle, Northern line to Moorgate"
 CHX,CTK,23,tube+tube+walking,"Northern line to Tottenham Court Road, Central line to St. Paul's, walk"
 CHX,BFR,9,tube+tube,"Northern line to Embankment, District line to Blackfriars"
 CHX,WAT,2,tube,Northern line to Waterloo
 CHX,WAE,12,tube+walking,"Northern line to Waterloo, walk"
 CHX,LBG,12,tube+tube,"Northern line to Waterloo, Jubilee line to London Bridge"
 CHX,VIC,11,tube+tube,"Northern line to Embankment, District line to Victoria"
-CHX,ZFD,8,tube+elizabeth-line,"Northern line to Tottenham Court Road, Elizabeth line to Farringdon Station"
-CHX,FDX,8,tube+elizabeth-line,"Northern line to Tottenham Court Road, Elizabeth line to Farringdon Station"
+CHX,ZFD,20,tube+tube+tube,"Bakerloo line to Oxford Circus, Victoria line to King's Cross St.Pancras, Metropolitan line to Farringdon"
+CHX,FDX,20,tube+tube+tube,"Bakerloo line to Oxford Circus, Victoria line to King's Cross St.Pancras, Metropolitan line to Farringdon"
 CHX,WEH,26,tube+tube,"Northern line to Waterloo, Jubilee line to West Ham"
 CHX,WIM,38,tube+tube+tube,"Bakerloo line to Piccadilly Circus, Piccadilly line to Earl's Court, District line to Wimbledon"
-CHX,ZWL,13,tube+elizabeth-line,"Northern line to Tottenham Court Road, Elizabeth line to Whitechapel Station"
+CHX,ZWL,21,tube+tube,"Bakerloo line to Embankment, District line to Whitechapel"
 CHX,TOM,22,tube+tube,"Bakerloo line to Oxford Circus, Victoria line to Tottenham Hale"
-CHX,BDS,7,tube+elizabeth-line,"Northern line to Tottenham Court Road, Elizabeth line to Bond Street Station"
+CHX,BDS,9,tube+tube,"Northern line to Tottenham Court Road, Central line to Bond Street"
 CHX,CLJ,37,tube+tube+overground,"Bakerloo line to Embankment, District line to West Brompton, Mildmay line to Clapham Junction Rail Station"
 CHX,HRW,43,tube+overground,"Northern line to Euston, Lioness line to Harrow & Wealdstone Rail Station"
 CHX,EPH,15,tube+walking,"Bakerloo line to Elephant & Castle, walk"
 CHX,HHY,14,tube+tube,"Bakerloo line to Oxford Circus, Victoria line to Highbury & Islington"
 CHX,WHP,22,tube+tube+walking,"Bakerloo line to Baker Street, Jubilee line to West Hampstead, walk"
+CHX,TCR,3,tube,Northern line to Tottenham Court Road
+CHX,CWX,27,tube+tube+walking,"Northern line to Waterloo, Jubilee line to Canary Wharf, walk"
 WAT,PAD,14,tube+tube,"Jubilee line to Baker Street, Bakerloo line to Paddington"
 WAT,PDX,14,tube+tube,"Jubilee line to Baker Street, Bakerloo line to Paddington"
 WAT,MYB,11,tube+tube,"Jubilee line to Baker Street, Bakerloo line to Marylebone"
@@ -467,11 +497,11 @@ WAT,CHX,3,tube,Northern line to Charing Cross
 WAT,WAE,0,walking,walk
 WAT,LBG,3,tube,Jubilee line to London Bridge
 WAT,VIC,12,tube+tube,"Northern line to Embankment, District line to Victoria"
-WAT,ZFD,11,tube+elizabeth-line,"Northern line to Tottenham Court Road, Elizabeth line to Farringdon Station"
-WAT,FDX,11,tube+elizabeth-line,"Northern line to Tottenham Court Road, Elizabeth line to Farringdon Station"
+WAT,ZFD,22,tube+tube+tube,"Waterloo & City line to Bank, Central line to Liverpool Street, Circle line to Farringdon"
+WAT,FDX,22,tube+tube+tube,"Waterloo & City line to Bank, Central line to Liverpool Street, Circle line to Farringdon"
 WAT,WEH,18,tube,Jubilee line to West Ham
 WAT,WIM,39,tube+tube,"Northern line to Embankment, District line to Wimbledon"
-WAT,ZWL,16,tube+elizabeth-line,"Northern line to Tottenham Court Road, Elizabeth line to Whitechapel Station"
+WAT,ZWL,18,tube+overground,"Jubilee line to Canada Water, Windrush line to Whitechapel Rail Station"
 WAT,TOM,24,tube+tube,"Bakerloo line to Oxford Circus, Victoria line to Tottenham Hale"
 WAT,BDS,6,tube,Jubilee line to Bond Street
 WAT,CLJ,34,tube+tube+walking+overground,"Northern line to Kennington, Northern line to Clapham North, walk, Windrush line to Clapham Junction Rail Station"
@@ -479,6 +509,8 @@ WAT,HRW,44,tube+tube+walking+overground,"Jubilee line to Finchley Road, Metropol
 WAT,EPH,12,tube+walking,"Bakerloo line to Elephant & Castle, walk"
 WAT,HHY,16,tube+tube,"Bakerloo line to Oxford Circus, Victoria line to Highbury & Islington"
 WAT,WHP,19,tube+walking,"Jubilee line to West Hampstead, walk"
+WAT,TCR,6,tube,Northern line to Tottenham Court Road
+WAT,CWX,19,tube+walking,"Jubilee line to Canary Wharf, walk"
 WAE,PAD,20,walking+tube+tube,"walk, Jubilee line to Baker Street, Bakerloo line to Paddington"
 WAE,PDX,20,walking+tube+tube,"walk, Jubilee line to Baker Street, Bakerloo line to Paddington"
 WAE,MYB,17,walking+tube+tube,"walk, Jubilee line to Baker Street, Bakerloo line to Marylebone"
@@ -497,8 +529,8 @@ WAE,CHX,13,walking+tube,"walk, Northern line to Charing Cross"
 WAE,WAT,0,walking,walk
 WAE,LBG,7,walking+tube,"walk, Jubilee line to London Bridge"
 WAE,VIC,19,walking+tube+tube,"walk, Jubilee line to Westminster, District line to Victoria"
-WAE,ZFD,21,walking+tube+elizabeth-line,"walk, Northern line to Tottenham Court Road, Elizabeth line to Farringdon Station"
-WAE,FDX,21,walking+tube+elizabeth-line,"walk, Northern line to Tottenham Court Road, Elizabeth line to Farringdon Station"
+WAE,ZFD,29,walking+tube+tube+tube,"walk, Jubilee line to London Bridge, Northern line to Moorgate, Metropolitan line to Farringdon"
+WAE,FDX,29,walking+tube+tube+tube,"walk, Jubilee line to London Bridge, Northern line to Moorgate, Metropolitan line to Farringdon"
 WAE,WEH,21,walking+tube,"walk, Jubilee line to West Ham"
 WAE,WIM,46,walking+tube+tube,"walk, Jubilee line to Westminster, District line to Wimbledon"
 WAE,ZWL,22,walking+tube+overground,"walk, Jubilee line to Canada Water, Windrush line to Whitechapel Rail Station"
@@ -509,6 +541,8 @@ WAE,HRW,50,walking+tube+tube+walking+overground,"walk, Jubilee line to Finchley 
 WAE,EPH,22,walking+tube+walking,"walk, Bakerloo line to Elephant & Castle, walk"
 WAE,HHY,26,walking+tube+tube,"walk, Bakerloo line to Oxford Circus, Victoria line to Highbury & Islington"
 WAE,WHP,26,walking+tube+walking,"walk, Jubilee line to West Hampstead, walk"
+WAE,TCR,16,walking+tube,"walk, Northern line to Tottenham Court Road"
+WAE,CWX,23,walking+tube+walking,"walk, Jubilee line to Canary Wharf, walk"
 LBG,PAD,17,tube+tube,"Jubilee line to Baker Street, Bakerloo line to Paddington"
 LBG,PDX,17,tube+tube,"Jubilee line to Baker Street, Bakerloo line to Paddington"
 LBG,MYB,14,tube+tube,"Jubilee line to Baker Street, Bakerloo line to Marylebone"
@@ -527,11 +561,11 @@ LBG,CHX,12,tube+tube,"Jubilee line to Waterloo, Bakerloo line to Charing Cross"
 LBG,WAT,3,tube,Jubilee line to Waterloo
 LBG,WAE,7,tube+walking,"Jubilee line to Southwark, walk"
 LBG,VIC,16,tube+tube,"Jubilee line to Westminster, District line to Victoria"
-LBG,ZFD,12,tube+walking+elizabeth-line,"Northern line to Moorgate, walk, Elizabeth line to Farringdon Station"
-LBG,FDX,12,tube+walking+elizabeth-line,"Northern line to Moorgate, walk, Elizabeth line to Farringdon Station"
+LBG,ZFD,15,tube+tube,"Northern line to Moorgate, Metropolitan line to Farringdon"
+LBG,FDX,15,tube+tube,"Northern line to Moorgate, Metropolitan line to Farringdon"
 LBG,WEH,14,tube,Jubilee line to West Ham
 LBG,WIM,42,tube+tube,"Jubilee line to Westminster, District line to Wimbledon"
-LBG,ZWL,12,tube+walking+elizabeth-line,"Northern line to Moorgate, walk, Elizabeth line to Whitechapel Station"
+LBG,ZWL,14,tube+walking+tube,"Northern line to Bank, walk, District line to Whitechapel"
 LBG,TOM,26,tube+tube,"Northern line to Euston, Victoria line to Tottenham Hale"
 LBG,BDS,9,tube,Jubilee line to Bond Street
 LBG,CLJ,34,tube+walking+overground,"Northern line to Clapham North, walk, Windrush line to Clapham Junction Rail Station"
@@ -539,6 +573,8 @@ LBG,HRW,47,tube+tube+walking+overground,"Jubilee line to Finchley Road, Metropol
 LBG,EPH,9,tube+walking,"Northern line to Elephant & Castle, walk"
 LBG,HHY,19,tube+tube,"Northern line to Euston, Victoria line to Highbury & Islington"
 LBG,WHP,23,tube+walking,"Jubilee line to West Hampstead, walk"
+LBG,TCR,15,tube+tube,"Northern line to Bank, Central line to Tottenham Court Road"
+LBG,CWX,16,tube+walking,"Jubilee line to Canary Wharf, walk"
 VIC,PAD,15,tube+tube,"Victoria line to Oxford Circus, Bakerloo line to Paddington"
 VIC,PDX,15,tube+tube,"Victoria line to Oxford Circus, Bakerloo line to Paddington"
 VIC,MYB,12,tube+tube,"Victoria line to Oxford Circus, Bakerloo line to Marylebone"
@@ -569,70 +605,76 @@ VIC,HRW,43,tube+overground,"Victoria line to Euston, Lioness line to Harrow & We
 VIC,EPH,23,tube+tube+walking,"Victoria line to Stockwell, Northern line to Elephant & Castle, walk"
 VIC,HHY,11,tube,Victoria line to Highbury & Islington
 VIC,WHP,24,tube+tube+tube+walking,"Victoria line to Oxford Circus, Bakerloo line to Baker Street, Jubilee line to West Hampstead, walk"
-ZFD,PAD,9,elizabeth-line,Elizabeth line to Paddington Station
-ZFD,PDX,9,elizabeth-line,Elizabeth line to Paddington Station
+VIC,TCR,9,tube+tube,"Victoria line to Oxford Circus, Central line to Tottenham Court Road"
+VIC,CWX,29,tube+tube+walking,"District line to Westminster, Jubilee line to Canary Wharf, walk"
+ZFD,PAD,13,tube,Hammersmith & City line to Paddington (H&C Line)
+ZFD,PDX,13,tube,Hammersmith & City line to Paddington (H&C Line)
 ZFD,MYB,16,tube+tube,"Metropolitan line to Baker Street, Bakerloo line to Marylebone"
 ZFD,EUS,11,tube+tube,"Metropolitan line to King's Cross St.Pancras, Northern line to Euston"
 ZFD,STP,7,tube+walking,"Metropolitan line to King's Cross St.Pancras, walk"
 ZFD,SPL,7,tube+walking,"Metropolitan line to King's Cross St.Pancras, walk"
 ZFD,KGX,3,tube,Hammersmith & City line to King's Cross St.Pancras
-ZFD,LST,2,elizabeth-line,Elizabeth line to Liverpool Street Station
-ZFD,LSX,2,elizabeth-line,Elizabeth line to Liverpool Street Station
+ZFD,LST,5,tube,Metropolitan line to Liverpool Street
+ZFD,LSX,5,tube,Metropolitan line to Liverpool Street
 ZFD,FST,16,tube+walking,"Circle line to Tower Hill, walk"
 ZFD,CST,17,tube+walking,"Circle line to Cannon Street, walk"
 ZFD,MOG,3,tube,Circle line to Moorgate
 ZFD,CTK,8,walking,walk
 ZFD,BFR,16,walking,walk
-ZFD,CHX,8,elizabeth-line+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Charing Cross"
-ZFD,WAT,11,elizabeth-line+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Waterloo"
-ZFD,WAE,21,elizabeth-line+tube+walking,"Elizabeth line to Tottenham Court Road Station, Northern line to Waterloo, walk"
-ZFD,LBG,12,elizabeth-line+walking+tube,"Elizabeth line to Liverpool Street Station, walk, Northern line to London Bridge"
+ZFD,CHX,21,tube+tube+tube,"Metropolitan line to King's Cross St.Pancras, Piccadilly line to Leicester Square, Northern line to Charing Cross"
+ZFD,WAT,20,tube+tube+tube,"Metropolitan line to Liverpool Street, Central line to Bank, Waterloo & City line to Waterloo"
+ZFD,WAE,26,tube+tube+tube+walking,"Hammersmith & City line to Moorgate, Northern line to London Bridge, Jubilee line to Southwark, walk"
+ZFD,LBG,13,tube+tube,"Metropolitan line to Moorgate, Northern line to London Bridge"
 ZFD,VIC,18,tube+tube,"Hammersmith & City line to King's Cross St.Pancras, Victoria line to Victoria"
 ZFD,FDX,0,walking,walk (same station)
-ZFD,WEH,19,elizabeth-line+tube,"Elizabeth line to Whitechapel Station, District line to West Ham"
+ZFD,WEH,19,tube,Hammersmith & City line to West Ham
 ZFD,WIM,46,tube+tube,"Hammersmith & City line to Edgware Road (Circle Line), District line to Wimbledon"
-ZFD,ZWL,5,elizabeth-line,Elizabeth line to Whitechapel Station
+ZFD,ZWL,10,tube,Hammersmith & City line to Whitechapel
 ZFD,TOM,20,tube+tube,"Metropolitan line to King's Cross St.Pancras, Victoria line to Tottenham Hale"
-ZFD,BDS,5,elizabeth-line,Elizabeth line to Bond Street Station
-ZFD,CLJ,45,elizabeth-line+overground,"Elizabeth line to Whitechapel Station, Windrush line to Clapham Junction Rail Station"
+ZFD,BDS,19,tube+tube,"Metropolitan line to Baker Street, Jubilee line to Bond Street"
+ZFD,CLJ,47,tube+tube+walking+overground,"Metropolitan line to Moorgate, Northern line to Clapham North, walk, Windrush line to Clapham Junction Rail Station"
 ZFD,HRW,44,tube+walking+overground,"Metropolitan line to Northwick Park, walk, Lioness line to Harrow & Wealdstone Rail Station"
-ZFD,EPH,21,elizabeth-line+walking+tube+walking,"Elizabeth line to Liverpool Street Station, walk, Northern line to Elephant & Castle, walk"
+ZFD,EPH,23,tube+tube+walking,"Metropolitan line to Moorgate, Northern line to Elephant & Castle, walk"
 ZFD,HHY,11,tube+tube,"Hammersmith & City line to King's Cross St.Pancras, Victoria line to Highbury & Islington"
 ZFD,WHP,22,tube+tube+walking,"Metropolitan line to Finchley Road, Jubilee line to West Hampstead, walk"
-FDX,PAD,9,elizabeth-line,Elizabeth line to Paddington Station
-FDX,PDX,9,elizabeth-line,Elizabeth line to Paddington Station
+ZFD,TCR,18,tube+tube,"Hammersmith & City line to Liverpool Street, Central line to Tottenham Court Road"
+ZFD,CWX,29,tube+tube+dlr+walking,"Hammersmith & City line to Liverpool Street, Central line to Bank, DLR to Poplar DLR Station, walk"
+FDX,PAD,13,tube,Hammersmith & City line to Paddington (H&C Line)
+FDX,PDX,13,tube,Hammersmith & City line to Paddington (H&C Line)
 FDX,MYB,16,tube+tube,"Metropolitan line to Baker Street, Bakerloo line to Marylebone"
 FDX,EUS,11,tube+tube,"Metropolitan line to King's Cross St.Pancras, Northern line to Euston"
 FDX,STP,7,tube+walking,"Metropolitan line to King's Cross St.Pancras, walk"
 FDX,SPL,7,tube+walking,"Metropolitan line to King's Cross St.Pancras, walk"
 FDX,KGX,3,tube,Hammersmith & City line to King's Cross St.Pancras
-FDX,LST,2,elizabeth-line,Elizabeth line to Liverpool Street Station
-FDX,LSX,2,elizabeth-line,Elizabeth line to Liverpool Street Station
+FDX,LST,5,tube,Metropolitan line to Liverpool Street
+FDX,LSX,5,tube,Metropolitan line to Liverpool Street
 FDX,FST,16,tube+walking,"Circle line to Tower Hill, walk"
 FDX,CST,17,tube+walking,"Circle line to Cannon Street, walk"
 FDX,MOG,3,tube,Circle line to Moorgate
 FDX,CTK,8,walking,walk
 FDX,BFR,16,walking,walk
-FDX,CHX,8,elizabeth-line+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Charing Cross"
-FDX,WAT,11,elizabeth-line+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Waterloo"
-FDX,WAE,21,elizabeth-line+tube+walking,"Elizabeth line to Tottenham Court Road Station, Northern line to Waterloo, walk"
-FDX,LBG,12,elizabeth-line+walking+tube,"Elizabeth line to Liverpool Street Station, walk, Northern line to London Bridge"
+FDX,CHX,21,tube+tube+tube,"Metropolitan line to King's Cross St.Pancras, Piccadilly line to Leicester Square, Northern line to Charing Cross"
+FDX,WAT,20,tube+tube+tube,"Metropolitan line to Liverpool Street, Central line to Bank, Waterloo & City line to Waterloo"
+FDX,WAE,26,tube+tube+tube+walking,"Hammersmith & City line to Moorgate, Northern line to London Bridge, Jubilee line to Southwark, walk"
+FDX,LBG,13,tube+tube,"Metropolitan line to Moorgate, Northern line to London Bridge"
 FDX,VIC,18,tube+tube,"Hammersmith & City line to King's Cross St.Pancras, Victoria line to Victoria"
 FDX,ZFD,0,walking,walk (same station)
-FDX,WEH,19,elizabeth-line+tube,"Elizabeth line to Whitechapel Station, District line to West Ham"
+FDX,WEH,19,tube,Hammersmith & City line to West Ham
 FDX,WIM,46,tube+tube,"Hammersmith & City line to Edgware Road (Circle Line), District line to Wimbledon"
-FDX,ZWL,5,elizabeth-line,Elizabeth line to Whitechapel Station
+FDX,ZWL,10,tube,Hammersmith & City line to Whitechapel
 FDX,TOM,20,tube+tube,"Metropolitan line to King's Cross St.Pancras, Victoria line to Tottenham Hale"
-FDX,BDS,5,elizabeth-line,Elizabeth line to Bond Street Station
-FDX,CLJ,45,elizabeth-line+overground,"Elizabeth line to Whitechapel Station, Windrush line to Clapham Junction Rail Station"
+FDX,BDS,19,tube+tube,"Metropolitan line to Baker Street, Jubilee line to Bond Street"
+FDX,CLJ,47,tube+tube+walking+overground,"Metropolitan line to Moorgate, Northern line to Clapham North, walk, Windrush line to Clapham Junction Rail Station"
 FDX,HRW,44,tube+walking+overground,"Metropolitan line to Northwick Park, walk, Lioness line to Harrow & Wealdstone Rail Station"
-FDX,EPH,21,elizabeth-line+walking+tube+walking,"Elizabeth line to Liverpool Street Station, walk, Northern line to Elephant & Castle, walk"
+FDX,EPH,23,tube+tube+walking,"Metropolitan line to Moorgate, Northern line to Elephant & Castle, walk"
 FDX,HHY,11,tube+tube,"Hammersmith & City line to King's Cross St.Pancras, Victoria line to Highbury & Islington"
 FDX,WHP,22,tube+tube+walking,"Metropolitan line to Finchley Road, Jubilee line to West Hampstead, walk"
-WEH,PAD,28,tube+elizabeth-line,"District line to Whitechapel, Elizabeth line to Paddington Station"
-WEH,PDX,28,tube+elizabeth-line,"District line to Whitechapel, Elizabeth line to Paddington Station"
+FDX,TCR,18,tube+tube,"Hammersmith & City line to Liverpool Street, Central line to Tottenham Court Road"
+FDX,CWX,29,tube+tube+dlr+walking,"Hammersmith & City line to Liverpool Street, Central line to Bank, DLR to Poplar DLR Station, walk"
+WEH,PAD,31,tube+tube,"Jubilee line to Baker Street, Bakerloo line to Paddington"
+WEH,PDX,31,tube+tube,"Jubilee line to Baker Street, Bakerloo line to Paddington"
 WEH,MYB,28,tube+tube,"Jubilee line to Baker Street, Bakerloo line to Marylebone"
-WEH,EUS,30,tube+elizabeth-line+walking+tube,"District line to Whitechapel, Elizabeth line to Liverpool Street Station, walk, Northern line to Euston"
+WEH,EUS,31,tube+tube+tube,"District line to Mile End, Central line to Oxford Circus, Victoria line to Euston"
 WEH,STP,31,tube+tube+tube+walking,"District line to Mile End, Central line to Liverpool Street, Metropolitan line to King's Cross St.Pancras, walk"
 WEH,SPL,31,tube+tube+tube+walking,"District line to Mile End, Central line to Liverpool Street, Metropolitan line to King's Cross St.Pancras, walk"
 WEH,KGX,27,tube+tube+tube,"District line to Mile End, Central line to Liverpool Street, Metropolitan line to King's Cross St.Pancras"
@@ -640,7 +682,7 @@ WEH,LST,13,tube+tube,"District line to Mile End, Central line to Liverpool Stree
 WEH,LSX,13,tube+tube,"District line to Mile End, Central line to Liverpool Street"
 WEH,FST,20,tube+walking,"District line to Tower Hill, walk"
 WEH,CST,21,tube+walking,"District line to Cannon Street, walk"
-WEH,MOG,18,tube+elizabeth-line+walking,"District line to Whitechapel, Elizabeth line to Liverpool Street Station, walk"
+WEH,MOG,20,tube+tube+walking,"District line to Mile End, Central line to Liverpool Street, walk"
 WEH,CTK,27,tube+tube+walking,"District line to Mile End, Central line to St. Paul's, walk"
 WEH,BFR,21,tube,District line to Blackfriars
 WEH,CHX,26,tube+tube,"Jubilee line to Waterloo, Bakerloo line to Charing Cross"
@@ -648,8 +690,8 @@ WEH,WAT,17,tube,Jubilee line to Waterloo
 WEH,WAE,21,tube+walking,"Jubilee line to Southwark, walk"
 WEH,LBG,14,tube,Jubilee line to London Bridge
 WEH,VIC,30,tube+tube,"Jubilee line to Westminster, District line to Victoria"
-WEH,ZFD,19,tube+elizabeth-line,"District line to Whitechapel, Elizabeth line to Farringdon Station"
-WEH,FDX,19,tube+elizabeth-line,"District line to Whitechapel, Elizabeth line to Farringdon Station"
+WEH,ZFD,23,tube+walking,"Hammersmith & City line to Barbican, walk"
+WEH,FDX,23,tube+walking,"Hammersmith & City line to Barbican, walk"
 WEH,WIM,56,tube+tube,"Jubilee line to Westminster, District line to Wimbledon"
 WEH,ZWL,11,tube,District line to Whitechapel
 WEH,TOM,42,tube+overground+tube,"Jubilee line to Stratford, Mildmay line to Highbury & Islington Rail Station, Victoria line to Tottenham Hale"
@@ -659,6 +701,8 @@ WEH,HRW,61,tube+tube+walking+overground,"Jubilee line to Finchley Road, Metropol
 WEH,EPH,29,tube+tube+walking,"Jubilee line to London Bridge, Northern line to Elephant & Castle, walk"
 WEH,HHY,25,tube+overground,"Jubilee line to Stratford, Mildmay line to Highbury & Islington Rail Station"
 WEH,WHP,37,tube+walking,"Jubilee line to West Hampstead, walk"
+WEH,TCR,22,tube+tube,"District line to Mile End, Central line to Tottenham Court Road"
+WEH,CWX,13,tube+dlr+walking,"Jubilee line to Canning Town, DLR to Poplar DLR Station, walk"
 WIM,PAD,28,tube,District line to Paddington
 WIM,PDX,28,tube,District line to Paddington
 WIM,MYB,38,tube+walking,"District line to Edgware Road (Circle Line), walk"
@@ -666,8 +710,8 @@ WIM,EUS,37,tube+tube,"District line to Victoria, Victoria line to Euston"
 WIM,STP,43,tube+tube+walking,"District line to Victoria, Victoria line to King's Cross St.Pancras, walk"
 WIM,SPL,43,tube+tube+walking,"District line to Victoria, Victoria line to King's Cross St.Pancras, walk"
 WIM,KGX,38,tube+tube,"District line to Victoria, Victoria line to King's Cross St.Pancras"
-WIM,LST,49,tube+tube+elizabeth-line,"District line to Embankment, Northern line to Tottenham Court Road, Elizabeth line to Liverpool Street Station"
-WIM,LSX,49,tube+tube+elizabeth-line,"District line to Embankment, Northern line to Tottenham Court Road, Elizabeth line to Liverpool Street Station"
+WIM,LST,51,tube+tube,"District line to Edgware Road (Circle Line), Hammersmith & City line to Liverpool Street"
+WIM,LSX,51,tube+tube,"District line to Edgware Road (Circle Line), Hammersmith & City line to Liverpool Street"
 WIM,FST,47,tube+walking,"District line to Tower Hill, walk"
 WIM,CST,42,tube+walking,"District line to Cannon Street, walk"
 WIM,MOG,48,tube+walking+tube,"District line to Monument, walk, Northern line to Moorgate"
@@ -678,8 +722,8 @@ WIM,WAT,37,tube+tube,"District line to Westminster, Jubilee line to Waterloo"
 WIM,WAE,43,tube+tube+walking,"District line to Westminster, Jubilee line to Southwark, walk"
 WIM,LBG,40,tube+tube,"District line to Westminster, Jubilee line to London Bridge"
 WIM,VIC,26,tube,District line to Victoria
-WIM,ZFD,46,tube+tube+elizabeth-line,"District line to Embankment, Northern line to Tottenham Court Road, Elizabeth line to Farringdon Station"
-WIM,FDX,46,tube+tube+elizabeth-line,"District line to Embankment, Northern line to Tottenham Court Road, Elizabeth line to Farringdon Station"
+WIM,ZFD,45,tube+tube,"District line to Edgware Road (Circle Line), Hammersmith & City line to Farringdon"
+WIM,FDX,45,tube+tube,"District line to Edgware Road (Circle Line), Hammersmith & City line to Farringdon"
 WIM,WEH,54,tube+tube,"District line to Westminster, Jubilee line to West Ham"
 WIM,ZWL,46,tube,District line to Whitechapel
 WIM,TOM,50,tube+tube,"District line to Victoria, Victoria line to Tottenham Hale"
@@ -689,36 +733,40 @@ WIM,HRW,58,tube+overground+overground,"District line to West Brompton, Mildmay l
 WIM,EPH,53,tube+tube+walking,"District line to Embankment, Bakerloo line to Elephant & Castle, walk"
 WIM,HHY,41,tube+tube,"District line to Victoria, Victoria line to Highbury & Islington"
 WIM,WHP,48,tube+overground+walking,"District line to West Brompton, Mildmay line to West Hampstead Rail Station, walk"
-ZWL,PAD,14,elizabeth-line,Elizabeth line to Paddington Station
-ZWL,PDX,14,elizabeth-line,Elizabeth line to Paddington Station
-ZWL,MYB,23,elizabeth-line+tube+tube,"Elizabeth line to Bond Street Station, Jubilee line to Baker Street, Bakerloo line to Marylebone"
-ZWL,EUS,16,elizabeth-line+walking+tube,"Elizabeth line to Liverpool Street Station, walk, Northern line to Euston"
-ZWL,STP,18,elizabeth-line+tube+walking,"Elizabeth line to Farringdon Station, Circle line to King's Cross St.Pancras, walk"
-ZWL,SPL,18,elizabeth-line+tube+walking,"Elizabeth line to Farringdon Station, Circle line to King's Cross St.Pancras, walk"
-ZWL,KGX,14,elizabeth-line+walking+tube,"Elizabeth line to Liverpool Street Station, walk, Northern line to King's Cross St.Pancras"
-ZWL,LST,3,elizabeth-line,Elizabeth line to Liverpool Street Station
-ZWL,LSX,3,elizabeth-line,Elizabeth line to Liverpool Street Station
+WIM,TCR,40,tube+tube,"District line to Notting Hill Gate, Central line to Tottenham Court Road"
+WIM,CWX,56,tube+tube+walking,"District line to Westminster, Jubilee line to Canary Wharf, walk"
+ZWL,PAD,27,tube,Hammersmith & City line to Paddington (H&C Line)
+ZWL,PDX,27,tube,Hammersmith & City line to Paddington (H&C Line)
+ZWL,MYB,29,overground+tube+tube,"Windrush line to Canada Water Rail Station, Jubilee line to Baker Street, Bakerloo line to Marylebone"
+ZWL,EUS,23,tube+tube,"Hammersmith & City line to King's Cross St.Pancras, Victoria line to Euston"
+ZWL,STP,19,tube+walking,"Hammersmith & City line to King's Cross St.Pancras, walk"
+ZWL,SPL,19,tube+walking,"Hammersmith & City line to King's Cross St.Pancras, walk"
+ZWL,KGX,15,tube,Hammersmith & City line to King's Cross St.Pancras
+ZWL,LST,7,tube,Hammersmith & City line to Liverpool Street
+ZWL,LSX,7,tube,Hammersmith & City line to Liverpool Street
 ZWL,FST,10,tube+walking,"District line to Tower Hill, walk"
 ZWL,CST,11,tube+walking,"District line to Cannon Street, walk"
-ZWL,MOG,4,elizabeth-line+walking,"Elizabeth line to Liverpool Street Station, walk"
-ZWL,CTK,24,elizabeth-line+tube+walking,"Elizabeth line to Liverpool Street Station, Central line to St. Paul's, walk"
+ZWL,MOG,9,tube,Hammersmith & City line to Moorgate
+ZWL,CTK,26,tube+tube+walking,"District line to Mile End, Central line to St. Paul's, walk"
 ZWL,BFR,11,tube,District line to Blackfriars
-ZWL,CHX,13,elizabeth-line+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Charing Cross"
-ZWL,WAT,16,elizabeth-line+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Waterloo"
+ZWL,CHX,22,tube+tube,"District line to Embankment, Northern line to Charing Cross"
+ZWL,WAT,17,overground+tube,"Windrush line to Canada Water Rail Station, Jubilee line to Waterloo"
 ZWL,WAE,21,overground+tube+walking,"Windrush line to Canada Water Rail Station, Jubilee line to Southwark, walk"
-ZWL,LBG,12,elizabeth-line+walking+tube,"Elizabeth line to Liverpool Street Station, walk, Northern line to London Bridge"
+ZWL,LBG,14,tube+walking+tube,"District line to Monument, walk, Northern line to London Bridge"
 ZWL,VIC,20,tube,District line to Victoria
-ZWL,ZFD,5,elizabeth-line,Elizabeth line to Farringdon Station
-ZWL,FDX,5,elizabeth-line,Elizabeth line to Farringdon Station
+ZWL,ZFD,12,tube,Hammersmith & City line to Farringdon
+ZWL,FDX,12,tube,Hammersmith & City line to Farringdon
 ZWL,WEH,9,tube,District line to West Ham
 ZWL,WIM,48,tube,District line to Wimbledon
 ZWL,TOM,29,overground+tube,"Windrush line to Highbury & Islington Rail Station, Victoria line to Tottenham Hale"
-ZWL,BDS,10,elizabeth-line,Elizabeth line to Bond Street Station
+ZWL,BDS,23,overground+tube,"Windrush line to Canada Water Rail Station, Jubilee line to Bond Street"
 ZWL,CLJ,36,overground,Windrush line to Clapham Junction Rail Station
-ZWL,HRW,51,elizabeth-line+tube+overground,"Elizabeth line to Tottenham Court Road Station, Northern line to Euston, Lioness line to Harrow & Wealdstone Rail Station"
-ZWL,EPH,22,elizabeth-line+walking+tube+walking,"Elizabeth line to Liverpool Street Station, walk, Northern line to Elephant & Castle, walk"
+ZWL,HRW,57,tube+walking+tube+overground,"District line to Monument, walk, Northern line to Euston, Lioness line to Harrow & Wealdstone Rail Station"
+ZWL,EPH,24,tube+walking+tube+walking,"District line to Monument, walk, Northern line to Elephant & Castle, walk"
 ZWL,HHY,15,overground,Windrush line to Highbury & Islington Rail Station
-ZWL,WHP,31,elizabeth-line+tube+walking,"Elizabeth line to Bond Street Station, Jubilee line to West Hampstead, walk"
+ZWL,WHP,38,overground+tube+walking,"Windrush line to Canada Water Rail Station, Jubilee line to West Hampstead, walk"
+ZWL,TCR,23,tube+tube,"Hammersmith & City line to Mile End, Central line to Tottenham Court Road"
+ZWL,CWX,20,overground+walking+dlr+walking,"Windrush line to Shadwell Rail Station, walk, DLR to Poplar DLR Station, walk"
 TOM,PAD,29,tube+tube,"Victoria line to Oxford Circus, Bakerloo line to Paddington"
 TOM,PDX,29,tube+tube,"Victoria line to Oxford Circus, Bakerloo line to Paddington"
 TOM,MYB,26,tube+tube,"Victoria line to Oxford Circus, Bakerloo line to Marylebone"
@@ -749,36 +797,40 @@ TOM,HRW,51,tube+overground,"Victoria line to Euston, Lioness line to Harrow & We
 TOM,EPH,39,tube+tube+walking,"Victoria line to Oxford Circus, Bakerloo line to Elephant & Castle, walk"
 TOM,HHY,8,tube,Victoria line to Highbury & Islington
 TOM,WHP,36,tube+tube+tube+walking,"Victoria line to King's Cross St.Pancras, Metropolitan line to Finchley Road, Jubilee line to West Hampstead, walk"
-BDS,PAD,4,elizabeth-line,Elizabeth line to Paddington Station
-BDS,PDX,4,elizabeth-line,Elizabeth line to Paddington Station
+TOM,TCR,22,tube+tube,"Victoria line to Euston, Northern line to Tottenham Court Road"
+TOM,CWX,44,tube+tube+dlr+walking,"Victoria line to Euston, Northern line to Bank, DLR to Poplar DLR Station, walk"
+BDS,PAD,8,tube+tube,"Jubilee line to Baker Street, Bakerloo line to Paddington"
+BDS,PDX,8,tube+tube,"Jubilee line to Baker Street, Bakerloo line to Paddington"
 BDS,MYB,5,tube+tube,"Jubilee line to Baker Street, Bakerloo line to Marylebone"
 BDS,EUS,9,tube+tube,"Central line to Oxford Circus, Victoria line to Euston"
 BDS,STP,13,tube+tube+walking,"Central line to Oxford Circus, Victoria line to King's Cross St.Pancras, walk"
 BDS,SPL,13,tube+tube+walking,"Central line to Oxford Circus, Victoria line to King's Cross St.Pancras, walk"
 BDS,KGX,9,tube+tube,"Central line to Oxford Circus, Victoria line to King's Cross St.Pancras"
-BDS,LST,7,elizabeth-line,Elizabeth line to Liverpool Street Station
-BDS,LSX,7,elizabeth-line,Elizabeth line to Liverpool Street Station
-BDS,FST,25,elizabeth-line+tube+walking,"Elizabeth line to Whitechapel Station, District line to Tower Hill, walk"
+BDS,LST,12,tube,Central line to Liverpool Street
+BDS,LSX,12,tube,Central line to Liverpool Street
+BDS,FST,25,tube+tube+walking,"Jubilee line to Westminster, District line to Tower Hill, walk"
 BDS,CST,19,tube+walking,"Central line to Bank, walk"
-BDS,MOG,8,elizabeth-line+walking,"Elizabeth line to Liverpool Street Station, walk"
+BDS,MOG,17,tube+tube,"Central line to Bank, Northern line to Moorgate"
 BDS,CTK,19,tube+walking,"Central line to St. Paul's, walk"
 BDS,BFR,13,tube+tube,"Jubilee line to Westminster, District line to Blackfriars"
-BDS,CHX,8,elizabeth-line+tube,"Elizabeth line to Tottenham Court Road Station, Northern line to Charing Cross"
+BDS,CHX,10,tube+tube,"Central line to Oxford Circus, Bakerloo line to Charing Cross"
 BDS,WAT,6,tube,Jubilee line to Waterloo
 BDS,WAE,12,tube+walking,"Jubilee line to Southwark, walk"
 BDS,LBG,10,tube,Jubilee line to London Bridge
 BDS,VIC,9,tube+tube,"Central line to Oxford Circus, Victoria line to Victoria"
-BDS,ZFD,5,elizabeth-line,Elizabeth line to Farringdon Station
-BDS,FDX,5,elizabeth-line,Elizabeth line to Farringdon Station
+BDS,ZFD,18,tube+tube,"Jubilee line to Baker Street, Metropolitan line to Farringdon"
+BDS,FDX,18,tube+tube,"Jubilee line to Baker Street, Metropolitan line to Farringdon"
 BDS,WEH,24,tube,Jubilee line to West Ham
 BDS,WIM,34,tube+tube,"Central line to Notting Hill Gate, District line to Wimbledon"
-BDS,ZWL,10,elizabeth-line,Elizabeth line to Whitechapel Station
+BDS,ZWL,24,tube+overground,"Jubilee line to Canada Water, Windrush line to Whitechapel Rail Station"
 BDS,TOM,20,tube+tube,"Central line to Oxford Circus, Victoria line to Tottenham Hale"
 BDS,CLJ,33,tube+walking+overground,"Central line to Shepherd's Bush (Central Line) Underground Stn, walk, Mildmay line to Clapham Junction Rail Station"
 BDS,HRW,38,tube+tube+walking+overground,"Jubilee line to Finchley Road, Metropolitan line to Northwick Park, walk, Lioness line to Harrow & Wealdstone Rail Station"
 BDS,EPH,25,tube+tube+walking,"Central line to Oxford Circus, Bakerloo line to Elephant & Castle, walk"
 BDS,HHY,12,tube+tube,"Central line to Oxford Circus, Victoria line to Highbury & Islington"
 BDS,WHP,13,tube+walking,"Jubilee line to West Hampstead, walk"
+BDS,TCR,2,tube,Central line to Tottenham Court Road
+BDS,CWX,25,tube+walking,"Jubilee line to Canary Wharf, walk"
 CLJ,PAD,25,overground+tube,"Mildmay line to West Brompton Rail Station, District line to Paddington"
 CLJ,PDX,25,overground+tube,"Mildmay line to West Brompton Rail Station, District line to Paddington"
 CLJ,MYB,38,overground+tube+tube+tube,"Mildmay line to West Brompton Rail Station, District line to Victoria, Victoria line to Oxford Circus, Bakerloo line to Marylebone"
@@ -786,8 +838,8 @@ CLJ,EUS,34,overground+tube+tube,"Mildmay line to West Brompton Rail Station, Dis
 CLJ,STP,40,overground+tube+tube+walking,"Mildmay line to West Brompton Rail Station, District line to Victoria, Victoria line to King's Cross St.Pancras, walk"
 CLJ,SPL,40,overground+tube+tube+walking,"Mildmay line to West Brompton Rail Station, District line to Victoria, Victoria line to King's Cross St.Pancras, walk"
 CLJ,KGX,35,overground+tube+tube,"Mildmay line to West Brompton Rail Station, District line to Victoria, Victoria line to King's Cross St.Pancras"
-CLJ,LST,39,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
-CLJ,LSX,39,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+CLJ,LST,40,overground+walking+tube+walking,"Windrush line to Clapham High Street, walk, Northern line to Moorgate, walk"
+CLJ,LSX,40,overground+walking+tube+walking,"Windrush line to Clapham High Street, walk, Northern line to Moorgate, walk"
 CLJ,FST,44,overground+tube+walking,"Mildmay line to West Brompton Rail Station, District line to Tower Hill, walk"
 CLJ,CST,39,overground+tube+walking,"Mildmay line to West Brompton Rail Station, District line to Cannon Street, walk"
 CLJ,MOG,35,overground+walking+tube,"Windrush line to Clapham High Street, walk, Northern line to Moorgate"
@@ -798,8 +850,8 @@ CLJ,WAT,31,overground+walking+tube+tube,"Windrush line to Clapham High Street, w
 CLJ,WAE,39,overground+walking+tube+tube+walking,"Windrush line to Clapham High Street, walk, Northern line to Kennington, Northern line to Waterloo, walk"
 CLJ,LBG,31,overground+walking+tube,"Windrush line to Clapham High Street, walk, Northern line to London Bridge"
 CLJ,VIC,23,overground+tube,"Mildmay line to West Brompton Rail Station, District line to Victoria"
-CLJ,ZFD,41,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Farringdon Station"
-CLJ,FDX,41,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Farringdon Station"
+CLJ,ZFD,42,overground+tube+tube,"Mildmay line to West Brompton Rail Station, District line to Edgware Road (Circle Line), Hammersmith & City line to Farringdon"
+CLJ,FDX,42,overground+tube+tube,"Mildmay line to West Brompton Rail Station, District line to Edgware Road (Circle Line), Hammersmith & City line to Farringdon"
 CLJ,WEH,40,overground+tube,"Windrush line to Canada Water Rail Station, Jubilee line to West Ham"
 CLJ,WIM,27,overground+tube,"Mildmay line to West Brompton Rail Station, District line to Wimbledon"
 CLJ,ZWL,33,overground,Windrush line to Whitechapel Rail Station
@@ -809,6 +861,8 @@ CLJ,HRW,44,overground+overground,"Mildmay line to Willesden Junction Rail Statio
 CLJ,EPH,34,overground+walking+tube+walking,"Windrush line to Clapham High Street, walk, Northern line to Elephant & Castle, walk"
 CLJ,HHY,38,overground+tube+tube,"Mildmay line to West Brompton Rail Station, District line to Victoria, Victoria line to Highbury & Islington"
 CLJ,WHP,34,overground+walking,"Mildmay line to West Hampstead Rail Station, walk"
+CLJ,TCR,32,overground+walking+tube,"Mildmay line to Shepherd's Bush Rail Station, walk, Central line to Tottenham Court Road"
+CLJ,CWX,41,overground+tube+walking,"Windrush line to Canada Water Rail Station, Jubilee line to Canary Wharf, walk"
 HRW,PAD,28,tube,Bakerloo line to Paddington
 HRW,PDX,28,tube,Bakerloo line to Paddington
 HRW,MYB,31,tube,Bakerloo line to Marylebone
@@ -816,8 +870,8 @@ HRW,EUS,34,overground,Lioness line to Euston Rail Station
 HRW,STP,44,tube+walking+tube+walking,"Bakerloo line to Kenton, walk, Metropolitan line to King's Cross St.Pancras, walk"
 HRW,SPL,44,tube+walking+tube+walking,"Bakerloo line to Kenton, walk, Metropolitan line to King's Cross St.Pancras, walk"
 HRW,KGX,40,tube+walking+tube,"Bakerloo line to Kenton, walk, Metropolitan line to King's Cross St.Pancras"
-HRW,LST,50,tube+walking+elizabeth-line,"Bakerloo line to Paddington, walk, Elizabeth line to Liverpool Street Station"
-HRW,LSX,50,tube+walking+elizabeth-line,"Bakerloo line to Paddington, walk, Elizabeth line to Liverpool Street Station"
+HRW,LST,53,tube+walking+tube,"Bakerloo line to Kenton, walk, Metropolitan line to Liverpool Street"
+HRW,LSX,53,tube+walking+tube,"Bakerloo line to Kenton, walk, Metropolitan line to Liverpool Street"
 HRW,FST,61,tube+walking+tube+tube+walking,"Bakerloo line to Kenton, walk, Metropolitan line to Baker Street, Metropolitan line to Aldgate, walk"
 HRW,CST,58,tube+walking+tube+tube+tube+walking,"Bakerloo line to Kenton, walk, Metropolitan line to Finchley Road, Jubilee line to Westminster, District line to Cannon Street, walk"
 HRW,MOG,47,tube+walking+tube,"Bakerloo line to Kenton, walk, Metropolitan line to Moorgate"
@@ -832,13 +886,15 @@ HRW,ZFD,44,tube+walking+tube,"Bakerloo line to Kenton, walk, Metropolitan line t
 HRW,FDX,44,tube+walking+tube,"Bakerloo line to Kenton, walk, Metropolitan line to Farringdon"
 HRW,WEH,60,tube+walking+tube+tube,"Bakerloo line to Kenton, walk, Metropolitan line to Finchley Road, Jubilee line to West Ham"
 HRW,WIM,53,tube+overground+tube,"Bakerloo line to Willesden Junction, Mildmay line to West Brompton Rail Station, District line to Wimbledon"
-HRW,ZWL,53,tube+walking+elizabeth-line,"Bakerloo line to Paddington, walk, Elizabeth line to Whitechapel Station"
+HRW,ZWL,59,tube+walking+tube+tube,"Bakerloo line to Kenton, walk, Metropolitan line to Baker Street, Hammersmith & City line to Whitechapel"
 HRW,TOM,52,overground+tube,"Lioness line to Euston Rail Station, Victoria line to Tottenham Hale"
 HRW,BDS,40,tube+walking+tube+tube,"Bakerloo line to Kenton, walk, Metropolitan line to Finchley Road, Jubilee line to Bond Street"
 HRW,CLJ,42,tube+overground,"Bakerloo line to Willesden Junction, Mildmay line to Clapham Junction Rail Station"
 HRW,EPH,59,tube+walking,"Bakerloo line to Elephant & Castle, walk"
 HRW,HHY,44,overground+tube,"Lioness line to Euston Rail Station, Victoria line to Highbury & Islington"
 HRW,WHP,33,tube+overground+walking,"Bakerloo line to Willesden Junction, Mildmay line to West Hampstead Rail Station, walk"
+HRW,TCR,46,tube+tube,"Bakerloo line to Oxford Circus, Central line to Tottenham Court Road"
+HRW,CWX,62,tube+walking+tube+tube+walking,"Bakerloo line to Kenton, walk, Metropolitan line to Finchley Road, Jubilee line to Canary Wharf, walk"
 EPH,PAD,27,walking+tube,"walk, Bakerloo line to Paddington"
 EPH,PDX,27,walking+tube,"walk, Bakerloo line to Paddington"
 EPH,MYB,24,walking+tube,"walk, Bakerloo line to Marylebone"
@@ -858,17 +914,19 @@ EPH,WAT,12,walking+tube,"walk, Bakerloo line to Waterloo"
 EPH,WAE,22,walking+tube+walking,"walk, Bakerloo line to Waterloo, walk"
 EPH,LBG,12,walking+tube,"walk, Northern line to London Bridge"
 EPH,VIC,21,walking+tube+tube,"walk, Northern line to Stockwell, Victoria line to Victoria"
-EPH,ZFD,24,walking+tube+walking+elizabeth-line,"walk, Northern line to Moorgate, walk, Elizabeth line to Farringdon Station"
-EPH,FDX,24,walking+tube+walking+elizabeth-line,"walk, Northern line to Moorgate, walk, Elizabeth line to Farringdon Station"
+EPH,ZFD,27,walking+tube+tube,"walk, Northern line to Moorgate, Metropolitan line to Farringdon"
+EPH,FDX,27,walking+tube+tube,"walk, Northern line to Moorgate, Metropolitan line to Farringdon"
 EPH,WEH,32,walking+tube+tube,"walk, Northern line to London Bridge, Jubilee line to West Ham"
 EPH,WIM,53,walking+tube+tube,"walk, Bakerloo line to Embankment, District line to Wimbledon"
-EPH,ZWL,24,walking+tube+walking+elizabeth-line,"walk, Northern line to Moorgate, walk, Elizabeth line to Whitechapel Station"
+EPH,ZWL,26,walking+tube+walking+tube,"walk, Northern line to Bank, walk, District line to Whitechapel"
 EPH,TOM,36,walking+tube+tube,"walk, Bakerloo line to Oxford Circus, Victoria line to Tottenham Hale"
-EPH,BDS,24,walking+tube+tube+elizabeth-line,"walk, Northern line to Kennington, Northern line to Tottenham Court Road, Elizabeth line to Bond Street Station"
+EPH,BDS,24,walking+tube+tube,"walk, Bakerloo line to Oxford Circus, Central line to Bond Street"
 EPH,CLJ,36,walking+tube+walking+overground,"walk, Northern line to Clapham North, walk, Windrush line to Clapham Junction Rail Station"
 EPH,HRW,59,walking+tube+tube+overground,"walk, Northern line to Kennington, Northern line to Euston, Lioness line to Harrow & Wealdstone Rail Station"
 EPH,HHY,28,walking+tube+tube,"walk, Bakerloo line to Oxford Circus, Victoria line to Highbury & Islington"
 EPH,WHP,36,walking+tube+tube+walking,"walk, Bakerloo line to Baker Street, Jubilee line to West Hampstead, walk"
+EPH,TCR,18,walking+tube+tube,"walk, Northern line to Kennington, Northern line to Tottenham Court Road"
+EPH,CWX,31,walking+tube+dlr+walking,"walk, Northern line to Bank, DLR to Poplar DLR Station, walk"
 HHY,PAD,20,tube+tube,"Victoria line to Oxford Circus, Bakerloo line to Paddington"
 HHY,PDX,20,tube+tube,"Victoria line to Oxford Circus, Bakerloo line to Paddington"
 HHY,MYB,17,tube+tube,"Victoria line to Oxford Circus, Bakerloo line to Marylebone"
@@ -876,8 +934,8 @@ HHY,EUS,5,tube,Victoria line to Euston
 HHY,STP,7,tube+walking,"Victoria line to King's Cross St.Pancras, walk"
 HHY,SPL,7,tube+walking,"Victoria line to King's Cross St.Pancras, walk"
 HHY,KGX,3,tube,Victoria line to King's Cross St.Pancras
-HHY,LST,18,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
-HHY,LSX,18,overground+elizabeth-line,"Windrush line to Whitechapel Rail Station, Elizabeth line to Liverpool Street Station"
+HHY,LST,18,tube+tube,"Victoria line to King's Cross St.Pancras, Circle line to Liverpool Street"
+HHY,LSX,18,tube+tube,"Victoria line to King's Cross St.Pancras, Circle line to Liverpool Street"
 HHY,FST,25,overground+tube+walking,"Windrush line to Whitechapel Rail Station, District line to Tower Hill, walk"
 HHY,CST,26,overground+tube+walking,"Windrush line to Whitechapel Rail Station, District line to Cannon Street, walk"
 HHY,MOG,16,tube+tube,"Victoria line to Euston, Northern line to Moorgate"
@@ -899,6 +957,8 @@ HHY,CLJ,41,tube+tube+overground,"Victoria line to Victoria, District line to Wes
 HHY,HRW,42,tube+overground,"Victoria line to Euston, Lioness line to Harrow & Wealdstone Rail Station"
 HHY,EPH,30,tube+tube+walking,"Victoria line to Oxford Circus, Bakerloo line to Elephant & Castle, walk"
 HHY,WHP,22,overground+walking,"Mildmay line to West Hampstead Rail Station, walk"
+HHY,TCR,14,tube+tube,"Victoria line to Euston, Northern line to Tottenham Court Road"
+HHY,CWX,32,overground+walking+dlr+walking,"Windrush line to Shadwell Rail Station, walk, DLR to Poplar DLR Station, walk"
 WHP,PAD,17,walking+tube+tube,"walk, Jubilee line to Baker Street, Bakerloo line to Paddington"
 WHP,PDX,17,walking+tube+tube,"walk, Jubilee line to Baker Street, Bakerloo line to Paddington"
 WHP,MYB,14,walking+tube+tube,"walk, Jubilee line to Baker Street, Bakerloo line to Marylebone"
@@ -906,8 +966,8 @@ WHP,EUS,25,walking+tube+tube+tube,"walk, Jubilee line to Baker Street, Bakerloo 
 WHP,STP,25,walking+tube+tube+walking,"walk, Jubilee line to Finchley Road, Metropolitan line to King's Cross St.Pancras, walk"
 WHP,SPL,25,walking+tube+tube+walking,"walk, Jubilee line to Finchley Road, Metropolitan line to King's Cross St.Pancras, walk"
 WHP,KGX,21,walking+tube+tube,"walk, Jubilee line to Finchley Road, Metropolitan line to King's Cross St.Pancras"
-WHP,LST,28,walking+tube+elizabeth-line,"walk, Jubilee line to Bond Street, Elizabeth line to Liverpool Street Station"
-WHP,LSX,28,walking+tube+elizabeth-line,"walk, Jubilee line to Bond Street, Elizabeth line to Liverpool Street Station"
+WHP,LST,31,walking+tube+tube,"walk, Jubilee line to Finchley Road, Metropolitan line to Liverpool Street"
+WHP,LSX,31,walking+tube+tube,"walk, Jubilee line to Finchley Road, Metropolitan line to Liverpool Street"
 WHP,FST,39,walking+tube+tube+walking,"walk, Jubilee line to Westminster, District line to Tower Hill, walk"
 WHP,CST,35,walking+tube+tube+walking,"walk, Jubilee line to Westminster, District line to Cannon Street, walk"
 WHP,MOG,28,walking+tube+tube,"walk, Jubilee line to Finchley Road, Metropolitan line to Moorgate"
@@ -922,10 +982,76 @@ WHP,ZFD,25,walking+tube+tube,"walk, Jubilee line to Finchley Road, Metropolitan 
 WHP,FDX,25,walking+tube+tube,"walk, Jubilee line to Finchley Road, Metropolitan line to Farringdon"
 WHP,WEH,38,walking+tube,"walk, Jubilee line to West Ham"
 WHP,WIM,48,walking+overground+tube,"walk, Mildmay line to West Brompton Rail Station, District line to Wimbledon"
-WHP,ZWL,32,walking+tube+elizabeth-line,"walk, Jubilee line to Bond Street, Elizabeth line to Whitechapel Station"
+WHP,ZWL,38,walking+tube+overground,"walk, Jubilee line to Canada Water, Windrush line to Whitechapel Rail Station"
 WHP,TOM,36,walking+tube+tube+tube,"walk, Jubilee line to Baker Street, Bakerloo line to Oxford Circus, Victoria line to Tottenham Hale"
 WHP,BDS,14,walking+tube,"walk, Jubilee line to Bond Street"
 WHP,CLJ,37,walking+overground,"walk, Mildmay line to Clapham Junction Rail Station"
 WHP,HRW,36,walking+overground+overground,"walk, Mildmay line to Willesden Junction Rail Station, Lioness line to Harrow & Wealdstone Rail Station"
 WHP,EPH,37,walking+tube+tube+walking,"walk, Jubilee line to Baker Street, Bakerloo line to Elephant & Castle, walk"
 WHP,HHY,23,walking+overground,"walk, Mildmay line to Highbury & Islington Rail Station"
+WHP,TCR,21,walking+tube+tube,"walk, Jubilee line to Bond Street, Central line to Tottenham Court Road"
+WHP,CWX,39,walking+tube+walking,"walk, Jubilee line to Canary Wharf, walk"
+TCR,PAD,14,tube+tube,"Central line to Oxford Circus, Bakerloo line to Paddington"
+TCR,PDX,14,tube+tube,"Central line to Oxford Circus, Bakerloo line to Paddington"
+TCR,MYB,11,tube+tube,"Central line to Oxford Circus, Bakerloo line to Marylebone"
+TCR,EUS,4,tube,Northern line to Euston
+TCR,STP,14,tube+tube+walking,"Northern line to Euston, Victoria line to King's Cross St.Pancras, walk"
+TCR,SPL,14,tube+tube+walking,"Northern line to Euston, Victoria line to King's Cross St.Pancras, walk"
+TCR,KGX,10,tube+tube,"Northern line to Euston, Victoria line to King's Cross St.Pancras"
+TCR,LST,9,tube,Central line to Liverpool Street
+TCR,LSX,9,tube,Central line to Liverpool Street
+TCR,FST,23,tube+tube+walking,"Northern line to Embankment, District line to Tower Hill, walk"
+TCR,CST,16,tube+walking,"Central line to Bank, walk"
+TCR,MOG,15,tube+tube,"Central line to Bank, Northern line to Moorgate"
+TCR,CTK,16,tube+walking,"Central line to St. Paul's, walk"
+TCR,BFR,11,tube+tube,"Northern line to Embankment, District line to Blackfriars"
+TCR,CHX,2,tube,Northern line to Charing Cross
+TCR,WAT,5,tube,Northern line to Waterloo
+TCR,WAE,15,tube+walking,"Northern line to Waterloo, walk"
+TCR,LBG,14,tube+tube,"Northern line to Waterloo, Jubilee line to London Bridge"
+TCR,VIC,10,tube+tube,"Central line to Oxford Circus, Victoria line to Victoria"
+TCR,ZFD,19,tube+tube+tube,"Northern line to Euston, Victoria line to King's Cross St.Pancras, Hammersmith & City line to Farringdon"
+TCR,FDX,19,tube+tube+tube,"Northern line to Euston, Victoria line to King's Cross St.Pancras, Hammersmith & City line to Farringdon"
+TCR,WEH,21,tube+tube,"Central line to Mile End, District line to West Ham"
+TCR,WIM,37,tube+tube,"Central line to Notting Hill Gate, District line to Wimbledon"
+TCR,ZWL,24,tube+tube,"Central line to Mile End, District line to Whitechapel"
+TCR,TOM,20,tube+tube,"Northern line to Euston, Victoria line to Tottenham Hale"
+TCR,BDS,3,tube,Central line to Bond Street
+TCR,CLJ,36,tube+walking+overground,"Central line to Shepherd's Bush (Central Line) Underground Stn, walk, Mildmay line to Clapham Junction Rail Station"
+TCR,HRW,40,tube+overground,"Northern line to Euston, Lioness line to Harrow & Wealdstone Rail Station"
+TCR,EPH,20,tube+tube+walking,"Northern line to Kennington, Northern line to Elephant & Castle, walk"
+TCR,HHY,12,tube+tube,"Northern line to Euston, Victoria line to Highbury & Islington"
+TCR,WHP,21,tube+tube+walking,"Central line to Bond Street, Jubilee line to West Hampstead, walk"
+TCR,CWX,25,tube+dlr+walking,"Central line to Bank, DLR to Poplar DLR Station, walk"
+CWX,PAD,33,walking+tube+tube,"walk, Jubilee line to Baker Street, Bakerloo line to Paddington"
+CWX,PDX,33,walking+tube+tube,"walk, Jubilee line to Baker Street, Bakerloo line to Paddington"
+CWX,MYB,30,walking+tube+tube,"walk, Jubilee line to Baker Street, Bakerloo line to Marylebone"
+CWX,EUS,28,walking+dlr+tube,"walk, DLR to Bank DLR Station, Northern line to Euston"
+CWX,STP,33,walking+dlr+tube+walking,"walk, DLR to Bank DLR Station, Northern line to King's Cross St.Pancras, walk"
+CWX,SPL,33,walking+dlr+tube+walking,"walk, DLR to Bank DLR Station, Northern line to King's Cross St.Pancras, walk"
+CWX,KGX,25,walking+dlr+tube,"walk, DLR to Bank DLR Station, Northern line to King's Cross St.Pancras"
+CWX,LST,21,walking+dlr+tube,"walk, DLR to Bank DLR Station, Central line to Liverpool Street"
+CWX,LSX,21,walking+dlr+tube,"walk, DLR to Bank DLR Station, Central line to Liverpool Street"
+CWX,FST,22,walking+dlr+walking,"walk, DLR to Tower Gateway DLR Station, walk"
+CWX,CST,24,walking+dlr+walking,"walk, DLR to Bank DLR Station, walk"
+CWX,MOG,19,walking+dlr+tube,"walk, DLR to Bank DLR Station, Northern line to Moorgate"
+CWX,CTK,29,walking+dlr+tube+walking,"walk, DLR to Bank DLR Station, Central line to St. Paul's, walk"
+CWX,BFR,26,walking+dlr+walking+tube,"walk, DLR to Bank DLR Station, walk, Circle line to Blackfriars"
+CWX,CHX,28,walking+tube+tube,"walk, Jubilee line to Waterloo, Bakerloo line to Charing Cross"
+CWX,WAT,19,walking+tube,"walk, Jubilee line to Waterloo"
+CWX,WAE,23,walking+tube+walking,"walk, Jubilee line to Southwark, walk"
+CWX,LBG,16,walking+tube,"walk, Jubilee line to London Bridge"
+CWX,VIC,32,walking+tube+tube,"walk, Jubilee line to Westminster, District line to Victoria"
+CWX,ZFD,30,walking+dlr+tube+tube+walking,"walk, DLR to Bank DLR Station, Northern line to Moorgate, Circle line to Barbican, walk"
+CWX,FDX,30,walking+dlr+tube+tube+walking,"walk, DLR to Bank DLR Station, Northern line to Moorgate, Circle line to Barbican, walk"
+CWX,WEH,15,walking+dlr+tube,"walk, DLR to Canning Town DLR Station, Jubilee line to West Ham"
+CWX,WIM,58,walking+tube+tube,"walk, Jubilee line to Westminster, District line to Wimbledon"
+CWX,ZWL,18,walking+dlr+walking+overground,"walk, DLR to Shadwell DLR, walk, Windrush line to Whitechapel Rail Station"
+CWX,TOM,42,walking+dlr+tube+tube,"walk, DLR to Bank DLR Station, Northern line to Euston, Victoria line to Tottenham Hale"
+CWX,BDS,25,walking+tube,"walk, Jubilee line to Bond Street"
+CWX,CLJ,43,walking+tube+overground,"walk, Jubilee line to Canada Water, Windrush line to Clapham Junction Rail Station"
+CWX,HRW,63,walking+tube+tube+walking+overground,"walk, Jubilee line to Finchley Road, Metropolitan line to Northwick Park, walk, Lioness line to Harrow & Wealdstone Rail Station"
+CWX,EPH,28,walking+dlr+tube+walking,"walk, DLR to Bank DLR Station, Northern line to Elephant & Castle, walk"
+CWX,HHY,34,walking+dlr+tube+tube,"walk, DLR to Bank DLR Station, Northern line to Euston, Victoria line to Highbury & Islington"
+CWX,WHP,39,walking+tube+walking,"walk, Jubilee line to West Hampstead, walk"
+CWX,TCR,25,walking+dlr+tube,"walk, DLR to Bank DLR Station, Central line to Tottenham Court Road"

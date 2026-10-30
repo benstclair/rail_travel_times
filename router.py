@@ -17,7 +17,8 @@ DESTINATIONS = {'LST': {'LST', 'LSX'},  # main line + Elizabeth line low-level
 # journey-time gain on the 2 Feb 2027 timetable; linked pairwise by TfL
 HUBS = ['PAD', 'PDX', 'MYB', 'EUS', 'STP', 'SPL', 'KGX', 'LST', 'LSX', 'FST', 'CST', 'MOG', 'CTK', 'BFR', 'CHX',
         'WAT', 'WAE', 'LBG', 'VIC', 'ZFD', 'FDX',
-        'WEH', 'WIM', 'ZWL', 'TOM', 'BDS', 'CLJ', 'HRW', 'EPH', 'HHY', 'WHP']
+        'WEH', 'WIM', 'ZWL', 'TOM', 'BDS', 'CLJ', 'HRW', 'EPH', 'HHY', 'WHP',
+        'TCR', 'CWX']  # Elizabeth line interchanges: TfL legs exclude the Elizabeth line, so join its timetabled trains here
 NO_HUBS = pd.DataFrame(columns=['from_crs', 'to_crs', 'tfl_min', 'modes', 'summary'])
 COLUMNS = ['crs', 'name', 'lat', 'lon', 'depart', 'arrive', 'duration_min', 'n_changes',
            'changes_at', 'arrival_station', 'tfl_min', 'legs']
