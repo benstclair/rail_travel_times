@@ -98,6 +98,9 @@ Timetable TIPLOCs missing from NaPTAN are mapped to a CRS via the MSN file and t
   TfL route also gets a TfL-only journey (`TfL duration + 5 min`, arriving 09:00, `arrival_station` = the origin).
   Both compete with rail journeys under the usual fastest / fewer changes / later departure rule.
   Other London stations must start with a train from that station (National Rail, Overground, Elizabeth line).
+- **Starting at a split station**: a journey from one CRS of a split station (13 MSN stations, e.g. Abbey Wood ABW/ABX)
+  may start with a train from its sibling CRS after that station's change time; shown as `walk <CRS> (Nm)` first in
+  `legs`, not counted as a change; name and coordinates stay those of the origin CRS.
 - **Elizabeth line**: timetabled trains only (CIF, operator XR), never a TfL leg, so its journeys depend on actual
   departure times; changing onto it uses station change times, or a hub hop where the codes differ (e.g. PAD -> PDX, 0 + 10 min).
 - **Allowances**: TfL's duration runs from the first tube departure, so it excludes walking between mainline and tube
@@ -197,7 +200,12 @@ call made during the build, open to review. Add new entries under the relevant a
     OXF 59 slower (median +8, max +19); EXD 337 -> 308 stations (30 east London/Essex origins lost: they relied on a TfL
     Elizabeth line hop reaching Paddington for the 06:00, but the first central train arrives 05:54, too late with the
     10-min allowance; Tottenham Court Road gained). 20 Elizabeth-line-only stations lost their TfL final leg and reach
-    LST/DMK by train. Split-station origins whose sibling is the Elizabeth line code got slower (see Limitations).
+    LST/DMK by train. Split-station origins whose sibling is the Elizabeth line code got slower (fixed by D18).
+  - D18 Starting at a split station -- an origin couldn't start with a train from its sibling CRS (Abbey Wood ABW -> LST
+    34 min vs ABX 18 + 4). Chose **allow, after the station's change time** [user], **not counted as a change** [user],
+    **shown as a `walk <CRS> (Nm)` leg** [user]. Effect on 2 Feb 2027: 23 origin/destination results improve or appear
+    (LST 8, DMK 7, OXF 8, EXD 0), e.g. ABW -> LST 34 -> 22, Tamworth High Level -> LST 137 -> 92; new results for
+    Retford Low Level (all three) and others. Non-split origins unchanged.
 - **A4. Know how awkward each journey is**
   - D8 Changes -- chose **no limit, but record them** [user]. -> `n_changes`, `changes_at` columns; marker outline on the map.
 - **A5. Decide where to look first, then refine to areas**
@@ -240,9 +248,9 @@ call made during the build, open to review. Add new entries under the relevant a
 - Mid-journey TfL transfers only between the 33 hubs; other London stations connect by rail only (plus the final leg).
 - Journeys from non-hub London stations can't start by tube/bus/walk to another station, so their times may be
   overstated (as for any origin, where driving to a better-served station isn't modelled either).
-- A journey from one CRS of a split station can't start with a train from its sibling CRS (e.g. a Whitechapel WHX
-  origin can't start on the Overground from ZWL); each NaPTAN CRS keeps its own result row. Since D17 this also hits
-  origins that used to take a TfL Elizabeth line leg, e.g. Abbey Wood ABW -> LST 34 min vs ABX 18 + 4 min change.
+- A journey from one CRS of a split station can start with a train from its sibling CRS (D18), but not with the
+  sibling's TfL start hop or TfL-only journey: Highbury & Islington HII -> EXD has no result although HHY has one
+  (194 min, starting with a hop to Paddington). Each NaPTAN CRS keeps its own result row.
 - CIF status/category/activity code tables were taken from the CIF v29 spec as the 2025 spec's tables did not extract;
   to be checked against the real feed.
 - Greater London membership is by NPTG locality, not a boundary polygon.

@@ -289,3 +289,17 @@ def test_journey_can_start_with_hub_hop():
     row = res.loc['KGX']  # 30-min hop + 30-min train beats the 80-min train
     assert (row.duration_min, row.depart, row.n_changes, row['name']) == (60, '07:20', 0, 'KGX name')
     assert row.legs == 'TfL 30m: walk | CCC 07:50 -> LST 08:20 [LE t1]'
+
+
+@pytest.mark.parametrize('own_dep, walk_wins', [(None, True), (430, True), (466, False)])
+def test_journey_can_start_from_sibling_crs(own_dep, walk_wins):
+    trains = [train('t1', [('CCCX', None, 470), ('LSTX', 500, None)])]
+    if own_dep:
+        trains.append(train('t2', [('BBBX', None, own_dep), ('LSTX', 500, None)]))
+    res = run(trains, min_change={'BBB': 5, 'CCC': 5}, siblings={'BBB': ['CCC'], 'CCC': ['BBB']})
+    row = res.loc['BBB']
+    if walk_wins:  # 5-min change time + 30-min train from the sibling code; not counted as a change
+        assert (row.duration_min, row.depart, row.n_changes, row['name']) == (35, '07:45', 0, 'BBB name')
+        assert row.legs == 'walk CCC (5m) | CCC 07:50 -> LST 08:20 [LE t1]'
+    else:
+        assert row.duration_min == 34 and row.legs == 'BBB 07:46 -> LST 08:20 [LE t2]'

@@ -120,23 +120,31 @@ def compute_journeys(connections, associations, stations, min_change, tfl, windo
         fr[1].append(node)
 
     station_name = lambda t: by_tiploc['name'][t] if t in by_tiploc.index else t
-    london_tiploc = {}  # name/coords for London origins whose journey doesn't start with a train there
+    london_tiploc, first_tiploc = {}, {}  # name/coords for origins whose journey doesn't start with a train there
     for t, c in zip(stations.tiploc, stations.crs):
+        first_tiploc.setdefault(c, t)
         if t in london_tiplocs:
             london_tiploc.setdefault(c, t)
 
     def best(nodes, hop_min=0):  # hop_min: TfL time before boarding the first train
         return min(((n[0] - dep[n[2]] + hop_min, n[1], hop_min - dep[n[2]]), n) for n in nodes)
 
-    # per origin CRS: (key, node, start) with start None (train from here), (hub, minutes) or 'tfl' (TfL all the way)
+    # per origin CRS: (key, node, start) with start None (train from here), (hub, minutes, 'TfL') / (sibling, MCT, 'walk')
+    # or 'tfl' (TfL all the way)
     options = {crs: (*best(nodes), None) for crs, (_, nodes) in frontier.items()}
+
+    def offer(a, b, minutes, how, nodes):
+        if a not in dest_crs and nodes:
+            key, node = best(nodes, minutes)
+            if a not in options or key < options[a][0]:
+                options[a] = (key, node, (b, minutes, how))
+
     for a, hops in hub_out.items():
         for b, hop_min in hops:
-            nodes = [n for n in frontier.get(b, ([], []))[1] if dep[n[2]] - hop_min >= TFL_FIRST_DEP]
-            if a not in dest_crs and nodes:
-                key, node = best(nodes, hop_min)
-                if a not in options or key < options[a][0]:
-                    options[a] = (key, node, (b, hop_min))
+            offer(a, b, hop_min, 'TfL', [n for n in frontier.get(b, ([], []))[1] if dep[n[2]] - hop_min >= TFL_FIRST_DEP])
+    for a, sibs in siblings.items():  # start with a train from the other code of a split station; not a change
+        for b in sibs:
+            offer(a, b, min_change.get(a, DEFAULT_MCT), 'walk', frontier.get(b, ([], []))[1])
     for a, t in tfl_min.items():
         key = (t, 0, t - hi)  # arrive at the end of the window
         if a not in options or key < options[a][0]:
@@ -169,9 +177,10 @@ def compute_journeys(connections, associations, stations, min_change, tfl, windo
                 node = ref
                 first = node[2]
             arrival = to_tip[i]
-            origin = london_tiploc.get(crs) if start else from_tip[first_i]
+            origin = from_tip[first_i] if not start else first_tiploc.get(crs) if start[2] == 'walk' else london_tiploc.get(crs)
             if start:
-                legs.insert(0, f'TfL {start[1]}m: {hub_summary[(crs, start[0])]}')
+                b, minutes, how = start
+                legs.insert(0, f'walk {b} ({minutes}m)' if how == 'walk' else f'TfL {minutes}m: {hub_summary[(crs, b)]}')
         if origin not in by_tiploc.index:
             continue
         if tfl_leg:
