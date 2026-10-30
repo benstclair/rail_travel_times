@@ -29,7 +29,10 @@ PAGE = r"""<!doctype html>
 <style>
 html,body,#map{height:100%;margin:0}
 .tp{background:#fff;border-radius:12px;box-shadow:0 4px 18px rgba(15,23,42,.15);padding:14px 16px;width:230px;
-  font:13px/1.4 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#1e293b}
+  font:13px/1.4 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#1e293b;
+  max-height:calc(100vh - 68px);max-height:calc(100dvh - 68px);overflow-y:auto}
+.tp .tg{display:none;margin:0 0 8px auto;padding:6px 10px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;
+  font:600 13px system-ui,sans-serif;color:#0f172a;cursor:pointer}
 .tp h4{margin:0 0 6px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#64748b}
 .tp .dst{margin-bottom:12px}
 .tp .dst label{display:flex;align-items:center;gap:6px;cursor:pointer;font-weight:600;color:#0f172a}
@@ -64,8 +67,19 @@ html,body,#map{height:100%;margin:0}
 .tp .info .tt{display:none;position:absolute;left:0;right:0;top:20px;padding:8px 10px;border-radius:8px;background:#0f172a;
   color:#f1f5f9;font:400 12px/1.4 system-ui,sans-serif;text-transform:none;text-align:left;z-index:1000}
 .tp .info:hover .tt,.tp .info:focus .tt{display:block}
-.pop{font:12px sans-serif;min-width:260px}.pop hr{margin:4px 0}.pop .legs{font:11px monospace}
+.pop{font:12px sans-serif;min-width:min(260px,70vw)}.pop hr{margin:4px 0}.pop .legs{font:11px monospace}
 .pop hr.sep{margin:8px 0;border:0;border-top:2px solid #94a3b8}
+@media (max-width:600px),(max-height:500px){
+  .tp .tg{display:block}
+  .tp.closed{width:auto;padding:0}
+  .tp.closed .tg{margin:0;padding:10px 14px;border:0}
+  .tp.closed>:not(.tg){display:none}
+}
+@media (pointer:coarse){
+  .tp .dst label,.tp .sw{padding:6px 0}
+  .tp input[type=range]::-webkit-slider-thumb{width:24px;height:24px}
+  .tp input[type=range]::-moz-range-thumb{width:20px;height:20px}
+}
 </style></head><body><div id="map"></div>
 <script>
 const D = __DATA__;
@@ -78,7 +92,8 @@ const mins = t => +t.slice(0, 2) * 60 + +t.slice(3);
 const LEG = /^(\S+) (\d\d:\d\d) -> (\S+) (\d\d:\d\d) \[(\S+) \S+\]$/;  // rail leg: codes -> names, headcode -> duration
 const TFL_LEG = /^TfL (\d+)m: (.*)$/;
 
-const map = L.map('map', {preferCanvas: true, center: [52.3, -1.2], zoom: 7});
+const hover = matchMedia('(hover: hover)').matches, coarse = matchMedia('(pointer: coarse)').matches;
+const map = L.map('map', {renderer: L.canvas({tolerance: coarse ? 8 : 0}), center: [52.3, -1.2], zoom: innerWidth < 600 ? 6 : 7});
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
   {maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
 const group = L.featureGroup().addTo(map);
@@ -114,25 +129,31 @@ function route(dest, [, dur, nch, dep, tfl, at, arr, legs]) {
         .replace(TFL_LEG, '$2 [TfL, $1 min]'))).join('<br>') + '</span>';
 }
 
-group.on('click', e => L.popup({maxWidth: Math.min(720, innerWidth - 60)}).setLatLng(e.layer.getLatLng()).setContent(popup(e.layer.i)).openOn(map));
-const tip = L.tooltip({direction: 'top', offset: [0, -8]});
-group.on('mouseover', e => map.openTooltip(tip.setContent(esc(S.name[e.layer.i]) + ': ' + hm(longest(e.layer.i)[1])), e.layer.getLatLng()));
-group.on('mouseout', () => map.closeTooltip(tip));
+group.on('click', e => L.popup({maxWidth: Math.min(720, innerWidth - 60), maxHeight: innerHeight * 0.6})
+  .setLatLng(e.layer.getLatLng()).setContent(popup(e.layer.i)).openOn(map));
+if (hover) {  // touch devices fire mouseover on tap but not mouseout, leaving the tooltip stuck under the popup
+  const tip = L.tooltip({direction: 'top', offset: [0, -8]});
+  group.on('mouseover', e => map.openTooltip(tip.setContent(esc(S.name[e.layer.i]) + ': ' + hm(longest(e.layer.i)[1])), e.layer.getLatLng()));
+  group.on('mouseout', () => map.closeTooltip(tip));
+}
 
 const ctl = L.control({position: 'topright'});
 ctl.onAdd = () => {
-  const d = L.DomUtil.create('div', 'tp');
-  d.innerHTML = '<h4>Destinations (up to 2)</h4><div class="dst">'
+  const d = L.DomUtil.create('div', 'tp closed');  // 'closed' only takes effect on small screens (see CSS)
+  d.innerHTML = '<button class="tg">Filters</button><h4>Destinations (up to 2)</h4><div class="dst">'
     + Object.keys(D.dests).map((k, n) => '<label><input type="checkbox" value="' + k + '"' + (n ? '' : ' checked') + '><span>'
       + esc(D.dests[k].name) + '</span></label>').join('')
     + '<p class="note">Colour, outline and the time displays reflect the longer journey.</p></div>'
     + '<h4>Max journey time<span class="info" tabindex="0">?<span class="tt">' + D.bufferNote + '</span></span></h4>'
-    + '<div class="val"><input id="thrNum" type="number" min="1" value="' + D.sliderMax + '"><span>min</span></div>'
+    + '<div class="val"><input id="thrNum" type="number" inputmode="numeric" min="1" value="' + D.sliderMax + '"><span>min</span></div>'
     + '<input id="thr" type="range" min="30" max="' + D.sliderMax + '" step="5" value="' + D.sliderMax + '" style="background:linear-gradient(90deg,' + D.track + ')">'
     + '<label class="sw">Include London stations<input id="ldn" type="checkbox"><i></i></label>' + D.legend
     + '<p class="note">Journey times start directly from stations and do not include travel to the start.</p>';
   L.DomEvent.disableClickPropagation(d);
   L.DomEvent.disableScrollPropagation(d);
+  const tg = d.querySelector('.tg'), setOpen = open => tg.textContent = d.classList.toggle('closed', !open) ? 'Filters' : 'Hide';
+  tg.addEventListener('click', () => setOpen(d.classList.contains('closed')));
+  map.on('click', () => setOpen(false));
   return d;
 };
 ctl.addTo(map);
@@ -191,7 +212,7 @@ def minutes(hhmm):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--results-dir", default="data", help="folder holding results_<CRS>.csv")
-    ap.add_argument("--out", default="map.html")
+    ap.add_argument("--out", default="index.html")
     ap.add_argument("--stations", default="data/stations.csv")
     args = ap.parse_args()
 

@@ -11,7 +11,7 @@ Station-to-station only (no walk/drive access yet).
 | 2a. TfL final leg to each London destination | `python tfl_transfers.py --dest LST` (and `--dest DMK`) | `data/tfl_transfers_<CRS>.csv` |
 | 2b. TfL mid-journey transfers between London hubs | `python tfl_transfers.py --hubs` | `data/tfl_hub_transfers.csv` |
 | 3. Timetable parse + routing | `python router.py --timetable <RDG timetable zip or dir> --date YYYY-MM-DD [--dest LST DMK OXF EXD]` | `data/results_<CRS>.csv` |
-| 4. Map | `python build_map.py [--results-dir data] [--out map.html]` | `map.html` |
+| 4. Map | `python build_map.py [--results-dir data] [--out index.html]` | `index.html` |
 
 Destinations are defined in `router.DESTINATIONS` (CRS -> set of CRS codes counted as arriving; LST = LST + LSX).
 The router loads the timetable once and writes one results file per destination (all four by default).
@@ -22,7 +22,7 @@ Tests: `python -m pytest -q tests/`.
 
 Status: all steps have run on real data. Step 3 ran on the RDG "Timetable - Full Refresh - Weekly" zip from the Rail
 Data Marketplace (set RJTTF995, generated 20 Oct 2026, schedules 17 May 2026 - 15 May 2027) for Tue 2 Feb 2027 (D2);
-`map.html` is rebuilt from those results. The planner spot-check is not yet done (see Open).
+`index.html` is rebuilt from those results. The planner spot-check is not yet done (see Open).
 34 stop TIPLOCs are unmapped on that date: Tyne & Wear Metro, Sheffield tram and District line stops, none National Rail.
 The feed names its files `RJTTF<seq><TYPE>.txt` (e.g. `RJTTF995MCA.txt`); `cif.py` matches the type with or without `.txt`.
 
@@ -39,7 +39,7 @@ The feed names its files `RJTTF<seq><TYPE>.txt` (e.g. `RJTTF995MCA.txt`); `cif.p
    only (Metro, tram, Underground); if a real station appears, add a mapping.
 4. Sanity-check `data/results_<CRS>.csv`: station counts per destination close to the previous run,
    no ECS/freight headcodes (only 1/2/9) in `legs`, a few known journeys unchanged or explainable.
-5. `python build_map.py` -> `map.html`.
+5. `python build_map.py` -> `index.html`.
 
 Steps 1-2 of the pipeline don't need re-running. If they are: `tfl_transfers.py` queries a fixed date
 (Tue 10 Nov 2026) and TfL only plans future dates, so update `PARAMS`/`DEADLINE` first. Cached responses are reused
@@ -110,6 +110,11 @@ Timetable TIPLOCs missing from NaPTAN are mapped to a CRS via the MSN file and t
 - **Map page**: one self-contained HTML file loading only Leaflet. Results are embedded as compact JSON (shared station
   table + one row array per destination); markers are drawn on a canvas, created once per station and restyled on
   destination change; popups are built on click.
+- **Small screens / touch**: the map opens at zoom 6 instead of 7 below 600px wide. The panel scrolls if taller than the window. At <=600px wide or <=500px tall it starts
+  collapsed to a "Filters" button (tap to open, "Hide" or a map tap to close). The hover tooltip is only attached
+  on devices that can hover. On coarse pointers, markers get an 8px extra tap radius (canvas `tolerance`), and panel
+  rows and the slider thumb are larger. Popups scroll beyond 60% of the window height; the max-time box opens a
+  number pad.
 
 ## Decision log
 
@@ -183,7 +188,7 @@ call made during the build, open to review. Add new entries under the relevant a
     coordinates so an access-time layer can be added without rework.
   - D10 Search radius -- chose **3 hours** as the starting point [user]. -> Colour bands to 180 min; beyond shown grey.
 - **A6. Explore the results interactively**
-  - D11 Output -- chose **interactive HTML in this folder** [user]. -> Leaflet `map.html` (folium dropped for page size
+  - D11 Output -- chose **interactive HTML in this folder** [user]. -> Leaflet `index.html` (folium dropped for page size
     and speed [user: "as efficient as possible"]).
 - **A7. Compare commutes to other destinations**
   - D13 Destination selection -- options: any station routed in the browser / precomputed list / all pairs.
@@ -192,7 +197,7 @@ call made during the build, open to review. Add new entries under the relevant a
     the **longer journey** [user]; popup shows **both, quicker first** [user]; stations without a result for both
     destinations **hidden** [user]. Filter and tooltip also follow the longer journey; ties -> more changes = longer [Claude].
   - D14 Map view on switching destination -- **fixed GB view** [user]; London switch default off for all [user].
-  - D12 Visual design (under review on `map.html`):
+  - D12 Visual design (under review on `index.html`):
     - Colour: **red-amber-green 30-min bands, green = closest; >180 min grey** [user] (replaced viridis).
     - Basemap: **OpenStreetMap only, no toggle** [user] (CARTO needs a key; Esri Light Gray tried and dropped).
     - **London stations hidden by default**, switch to include them [user] -- the aim is options outside London.
